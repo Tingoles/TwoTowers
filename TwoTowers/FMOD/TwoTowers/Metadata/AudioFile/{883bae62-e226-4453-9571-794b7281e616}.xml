@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{883bae62-e226-4453-9571-794b7281e616}">
         <property name="assetPath">
-            <value>Blocks/Generic/ThudNoClip01.wav</value>
+            <value>Impacts/Generic/ThudNoClip01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
