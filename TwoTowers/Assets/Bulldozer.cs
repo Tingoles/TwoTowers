@@ -30,6 +30,7 @@ public class Bulldozer : MonoBehaviour
     private List<GameObject> debries;
 
     private bool spawning = false;
+    private bool inProgress = false;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +49,7 @@ public class Bulldozer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && inProgress == false)
         {
             StartCoroutine(SpawnDebries(5));
             StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
@@ -78,16 +79,17 @@ public class Bulldozer : MonoBehaviour
             transform.position = Vector3.Lerp(targetPos, startPos, tl);
             yield return null;
         }
-
+        inProgress = false;
     }
 
     public IEnumerator SpawnDebries(int num)
     {
+        inProgress = true;
         spawning = true;
         for (int i = 0; i < num; i++)
         {
             GameObject newDebrie = Instantiate(debries[Random.Range(0, debries.Count)]);
-            newDebrie.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.2f, 0.2f), 0);
+            newDebrie.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f), 0);
             yield return new WaitForSeconds(0.3f);
         }
         spawning = false;
