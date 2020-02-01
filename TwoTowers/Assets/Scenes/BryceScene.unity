@@ -458,6 +458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
+      propertyPath: BlocksToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
+        type: 3}
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
