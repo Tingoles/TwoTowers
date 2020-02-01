@@ -431,6 +431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
+      propertyPath: BlocksToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
+        type: 3}
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
@@ -6560,7 +6565,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 0
+  antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -6569,7 +6574,7 @@ MonoBehaviour:
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
-    fastMode: 0
+    fastMode: 1
     keepAlpha: 0
   fog:
     enabled: 1
@@ -7129,9 +7134,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8332520952261676819, guid: fcf4ba3588012ae45a5784c0a13c9139,
         type: 3}
       propertyPath: m_LocalRotation.w
