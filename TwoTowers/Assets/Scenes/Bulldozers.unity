@@ -230,8 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3080c7477d9c4b04f9dfba09485f93aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate_speed: 1
+  rotateSpeed: 2
   dir: {x: 1, y: 0, z: 0}
+  maxRotateTime: 60
 --- !u!1001 &789039645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -336,19 +337,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.040488224
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.15110414
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.258819
+      value: -0.25563252
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9659259
+      value: 0.9540337
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_RootOrder
@@ -360,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4169332208276768, guid: 5d44e331ba00f2e4995a509c4193adb7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
