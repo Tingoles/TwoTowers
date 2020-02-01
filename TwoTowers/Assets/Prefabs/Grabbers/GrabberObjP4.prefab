@@ -807,8 +807,8 @@ MonoBehaviour:
   m_endSection: {fileID: 4823780745540781414}
   m_grabbed: 0
   m_grabAnim: {fileID: 1808032102973186151}
-  m_leftPos: {fileID: 8624928243528915650}
-  m_rightPos: {fileID: 4673927033834869347}
+  m_minPos: {fileID: 8624928243528915650}
+  m_maxPos: {fileID: 4673927033834869347}
 --- !u!54 &4823780745389184074
 Rigidbody:
   m_ObjectHideFlags: 0
