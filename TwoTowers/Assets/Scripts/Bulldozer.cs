@@ -26,16 +26,23 @@ public class Bulldozer : MonoBehaviour
     [SerializeField]
     Transform BlockSpawner;
 
+    public GameObject blockPoolManager;
+
     [SerializeField]
     private List<GameObject> debris;
 
     private bool spawning = false;
     private bool inProgress = false;
 
+    public int numBlocksToSpawn = 4;
+
     [SerializeField]
     private ParticleSystem shovedFX;
     [SerializeField]
     private ParticleSystem driveFX;
+
+    private float blockSpawnDelay = 10;
+    private float blockSpawnTimer = 0;
 
     private Animator animator;
 
@@ -60,12 +67,13 @@ public class Bulldozer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown("space") && inProgress == false)
+        if (blockSpawnTimer >= blockSpawnDelay && blockPoolManager.GetComponent<BlockManager>().activeBlocks.Count < 30)
         {
-            StartCoroutine(SpawnDebris(5));
+            StartCoroutine(SpawnDebris(numBlocksToSpawn));
             StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
+            blockSpawnTimer = 0; 
         }
-
+        blockSpawnTimer += Time.deltaTime;
 
     }
 
@@ -87,8 +95,8 @@ public class Bulldozer : MonoBehaviour
         animator.SetFloat("Speed", 1.0f);
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
-            float tl = t / forwardTime;
-            transform.position = Vector3.Lerp(startPos, targetPos, tl);
+            float tl = (t / forwardTime)*0.2f;
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, tl);
             yield return null;
         }
         animator.SetFloat("Speed", 0.0f);
@@ -120,8 +128,11 @@ public class Bulldozer : MonoBehaviour
             {
                 spawnOffset = -2;
             }
-            GameObject newDebrie = Instantiate(debris[Random.Range(0, debris.Count)]);
-            newDebrie.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f) + spawnOffset, newDebrie.transform.position.y +( (i*2) +2));
+            GameObject newDebris = Instantiate(debris[Random.Range(0, debris.Count)]);
+            newDebris.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f) + spawnOffset, newDebris.transform.position.y +( (i*2) +2));
+            newDebris.transform.parent = blockPoolManager.transform;
+            newDebris.GetComponent<Rigidbody>().freezeRotation = false;
+            blockPoolManager.GetComponent<BlockManager>().activeBlocks.Add(newDebris);
 
             yield return new WaitForSeconds(0.3f);
             spawnOffset += 2;
