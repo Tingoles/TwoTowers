@@ -11,7 +11,8 @@ public enum MenuButton
 public class Menu : MonoBehaviour
 {
     public List<SpriteRenderer> icons;
-    public GameObject Bomb;
+    public GameObject bomb;
+    public GameObject bulldozer;
 
     private int buttonHovered = 0;
     private bool doOnceLeft = true;
@@ -89,7 +90,7 @@ public class Menu : MonoBehaviour
 
     IEnumerator QuitGame()
     {
-        Instantiate<GameObject>(Bomb);
+        Instantiate<GameObject>(bomb);
         yield return new WaitForSeconds(4.0f);
         Application.Quit();
     }
@@ -97,7 +98,9 @@ public class Menu : MonoBehaviour
     IEnumerator StartTruck()
     {
         //transition
-        yield return new WaitForSeconds(1.0f);
+        bulldozer.GetComponent<LerpTowards>().start = true;
+        yield return new WaitForSeconds(3.0f);
+        FindObjectOfType<Transition>().LoadScene("Menu");
 
     }
 }
