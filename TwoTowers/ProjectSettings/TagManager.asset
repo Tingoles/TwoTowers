@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TowerWalls
   - Claw
+  - Spark
+  - Ground
   layers:
   - Default
   - TransparentFX
