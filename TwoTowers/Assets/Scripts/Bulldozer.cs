@@ -95,8 +95,8 @@ public class Bulldozer : MonoBehaviour
         animator.SetFloat("Speed", 1.0f);
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
-            float tl = t / forwardTime;
-            transform.position = Vector3.Lerp(startPos, targetPos, tl);
+            float tl = (t / forwardTime)*0.2f;
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, tl);
             yield return null;
         }
         animator.SetFloat("Speed", 0.0f);
