@@ -9,6 +9,7 @@ public class SpawnBuilding : MonoBehaviour
     public float blockSpawnRate = 0.2f; //time in seconds between each block spawning
     public GameObject blockPoolManager;
     public GameObject bombPrefab;
+    public GameObject[] ToDeleteOnStart;
 
     public List<GameObject> BlocksToSpawn = new List<GameObject>();
 
@@ -16,6 +17,8 @@ public class SpawnBuilding : MonoBehaviour
     {
         CreateTower();
         //blockPoolManager = GameObject.FindGameObjectWithTag("BlockManager");
+        ToDeleteOnStart = GameObject.FindGameObjectsWithTag("TowerWalls");
+
     }
 
     void CreateTower()
@@ -27,24 +30,52 @@ public class SpawnBuilding : MonoBehaviour
 
     IEnumerator BlockSpawn()
     {
+        int spawnOffset = -4;
         for (int i = 0; i < numBlocks; i++)
         {
-            if(i == numBlocks-5)
+            if(i == 2 || i == 8)
             {
                 GameObject bomb = Instantiate(bombPrefab);
                 bomb.GetComponent<BombScript>().fuseTimer = 7;
-                bomb.transform.position = transform.position;
+                bomb.GetComponent<BombScript>().explosionForce = 5000;
+                locationToSpawn = this.transform.position;
+                locationToSpawn.x = transform.position.x + spawnOffset;
+                if (spawnOffset == 4)
+                {
+                    spawnOffset = -6;
+                }
+
+                bomb.transform.position = locationToSpawn;
             }
+            else
+            {
+                GameObject newBlock = Instantiate(BlocksToSpawn[Random.Range(0, BlocksToSpawn.Count)], blockPoolManager.transform);
+                locationToSpawn = this.transform.position;
+                locationToSpawn.x = transform.position.x + spawnOffset;
+                if (spawnOffset == 4)
+                {
+                    spawnOffset = -6;
+                }
+                newBlock.transform.position = locationToSpawn;
 
-            GameObject newBlock = Instantiate(BlocksToSpawn[Random.Range(0, BlocksToSpawn.Count)], blockPoolManager.transform);
-            locationToSpawn = this.transform.position;
-            locationToSpawn.x = Random.Range(transform.position.x-2, transform.position.x +2);
-            newBlock.transform.position = locationToSpawn;
 
-            blockPoolManager.GetComponent<BlockManager>().addBlocksToList(newBlock);
+                blockPoolManager.GetComponent<BlockManager>().addBlocksToList(newBlock);
+            }
+            spawnOffset += 2;
+
             yield return new WaitForSeconds(blockSpawnRate);
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
+        foreach (GameObject block in blockPoolManager.GetComponent<BlockManager>().activeBlocks)
+        {
+            block.GetComponent<Rigidbody>().freezeRotation = false;
+        }
+        foreach(GameObject objToDelete in ToDeleteOnStart)
+        {
+
+            Destroy(objToDelete);
+        }
+        
     }
 }
 

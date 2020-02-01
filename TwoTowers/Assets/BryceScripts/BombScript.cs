@@ -21,24 +21,26 @@ public class BombScript : MonoBehaviour
     {
         timeSinceFuseStart += Time.deltaTime;
 
-            if(timeSinceFuseStart >= fuseTimer)
+        if(timeSinceFuseStart >= fuseTimer)
+        {
+            Ray hit;
+            hitObjCol = Physics.OverlapSphere(this.transform.position, explosionRadius);
+            foreach (Collider col in hitObjCol)
             {
-                Ray hit;
-                hitObjCol = Physics.OverlapSphere(this.transform.position, explosionRadius);
-                foreach (Collider col in hitObjCol)
-                {
-                    hitObjects.Add(col.gameObject);
-                }
-                foreach (GameObject explodedObj in hitObjects)
-                {
-                    if(explodedObj.GetComponent<Rigidbody>())
-                    {
-                        explodedObj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius);
-                    }
-                }
-               
-                Destroy(this.gameObject);
+                hitObjects.Add(col.gameObject);
             }
+            foreach (GameObject explodedObj in hitObjects)
+            {
+                if(explodedObj.GetComponent<Rigidbody>())
+                {
+                    explodedObj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius);
+                    explodedObj.GetComponent<Rigidbody>().angularVelocity = explodedObj.GetComponent<Rigidbody>().transform.right * Random.Range(-15, 15);
+
+                }
+            }
+           
+            Destroy(this.gameObject);
+        }
 
     }
 
