@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main/Impacts/Metal
+  Event: event:/Main/Impacts/Block
   PlayEvent: 0
   StopEvent: 2
   AllowFadeout: 1

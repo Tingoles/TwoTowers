@@ -26,11 +26,7 @@ public class Debris : MonoBehaviour
         }
 
         float velocity = GetComponent<Rigidbody>().velocity.magnitude/30.0f;
-        if (velocity > 0.05)
-        {
-            print(velocity);
-            emitter.SetParameter("Velocity", velocity);
-            emitter.Play();
-        }
+        emitter.SetParameter("Velocity", velocity);
+        emitter.Play();
     }
 }

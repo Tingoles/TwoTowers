@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerReturn" id="{8722cb7a-738f-427e-bee4-a43dfd041d9f}">
+        <property name="name">
+            <value>Birds</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{b6d32117-5b85-4e51-9015-cebe91bb7b14}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{ad77f993-73a0-4dbc-8b15-cb990feb0828}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{3fb8a207-8aac-4e32-adeb-7d1c4bed61d1}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{b6d32117-5b85-4e51-9015-cebe91bb7b14}">
+        <relationship name="effects">
+            <destination>{ddefc1d9-e549-43a9-be17-7f01792e3195}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{ad77f993-73a0-4dbc-8b15-cb990feb0828}"/>
+    <object class="MixerBusFader" id="{ddefc1d9-e549-43a9-be17-7f01792e3195}"/>
+</objects>

@@ -10,10 +10,19 @@ public class GrabberController : MonoBehaviour
     public bool m_grabbed = false;
     GameObject m_grabbedObj;
     GrabberInput m_input;
-    public FMODUnity.StudioEventEmitter emitter;
+    private FMODUnity.StudioEventEmitter startMotor;
+    private FMODUnity.StudioEventEmitter motor;
+    private FMODUnity.StudioEventEmitter stopMotor;
+    private FMODUnity.StudioEventEmitter extensionMotor;
+
     // Start is called before the first frame update
     void Start()
     {
+        motor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[0];
+        stopMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[1];
+        startMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[2];
+        extensionMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[3];
+
         m_input = GetComponent<GrabberInput>();
     }
 
@@ -68,21 +77,70 @@ public class GrabberController : MonoBehaviour
 
     void updateFmodParams(Vector3 velocity)
     {
-        float xVelocity = velocity.x;
-        if(xVelocity > -0.005f && xVelocity < 0.005f)
+        updateXVelocity(velocity);
+        updateYVelocity(velocity);
+    }
+
+    void updateXVelocity(Vector3 velocity)
+    {
+        float xVelocity = velocity.x * 6.0f;
+        if (xVelocity > -0.005f && xVelocity < 0.005f)
         {
-            emitter.Stop();
+            if (motor.IsPlaying())
+            {
+                stopMotor.Play();
+                motor.Stop();
+            }
         }
-        else if (xVelocity < 0) 
+        else if (xVelocity < 0)
         {
-            if (!emitter.IsPlaying()) emitter.Play();
+            if (!motor.IsPlaying())
+            {
+                startMotor.Play();
+                motor.Play();
+            }
+
             xVelocity *= -1.0f;
         }
         else
         {
-            if (!emitter.IsPlaying()) emitter.Play();
+            if (!motor.IsPlaying())
+            {
+                startMotor.Play();
+                motor.Play();
+            }
         }
-            
-        emitter.SetParameter("Velocity", xVelocity);
+
+        motor.SetParameter("Velocity", xVelocity);
+    }
+
+    void updateYVelocity(Vector3 velocity)
+    {
+        float yVelocity = velocity.y * 6.0f;
+        if (yVelocity > -0.005f && yVelocity < 0.005f)
+        {
+            if (extensionMotor.IsPlaying())
+            {
+                extensionMotor.Stop();
+            }
+        }
+        else if (yVelocity < 0)
+        {
+            if (!extensionMotor.IsPlaying())
+            {
+                extensionMotor.Play();
+            }
+
+            yVelocity *= -1.0f;
+        }
+        else
+        {
+            if (!extensionMotor.IsPlaying())
+            {
+                extensionMotor.Play();
+            }
+        }
+
+        extensionMotor.SetParameter("Velocity", yVelocity);
     }
 }
