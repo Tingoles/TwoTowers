@@ -655,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -665,7 +665,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -701,6 +701,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -744,6 +754,16 @@ PrefabInstance:
       propertyPath: driveFX
       value: 
       objectReference: {fileID: 1657410276}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: numBlocksToSpawn
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: blockPoolManager
+      value: 
+      objectReference: {fileID: 1389723992}
     - target: {fileID: 309728529459932762, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_Constraints
@@ -790,6 +810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a7a295b44188644a448ed082391df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulldozers:
+  - {fileID: 1752299762}
+  - {fileID: 1357862412}
 --- !u!4 &938065457
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1013803675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6187,7 +6210,7 @@ GameObject:
   - component: {fileID: 1870962660}
   - component: {fileID: 1870962659}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: DestoryBlockVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6394,7 +6417,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6199999
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -6441,6 +6464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: debris.Array.size
@@ -6461,8 +6489,18 @@ PrefabInstance:
     - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: moveDis
-      value: 10.5
+      value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: numBlocksToSpawn
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: blockPoolManager
+      value: 
+      objectReference: {fileID: 1389723992}
     - target: {fileID: 309728529459932762, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_Constraints

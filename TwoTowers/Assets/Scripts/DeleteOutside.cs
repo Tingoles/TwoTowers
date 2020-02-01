@@ -18,8 +18,11 @@ public class DeleteOutside : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        BlockManager bm = GameObject.FindGameObjectWithTag("BlockManager").GetComponent<BlockManager>();
-        bm.activeBlocks.Remove(collision.gameObject);
-        Destroy(collision.gameObject);
+        if (collision.gameObject.layer == 8)
+        {
+            BlockManager bm = GameObject.FindGameObjectWithTag("BlockManager").GetComponent<BlockManager>();
+            bm.activeBlocks.Remove(collision.gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
