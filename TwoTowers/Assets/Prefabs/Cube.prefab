@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2149324507291333804
+--- !u!1 &5953628845596910517
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1580947644323945522}
-  - component: {fileID: 2215780984397549360}
-  - component: {fileID: 6577706802589530347}
-  - component: {fileID: 221497521205332175}
-  - component: {fileID: 8137849653536628338}
-  - component: {fileID: 6793180347013715519}
+  - component: {fileID: 5953628845596910505}
+  - component: {fileID: 5953628845596910504}
+  - component: {fileID: 5953628845596910519}
+  - component: {fileID: 5953628845596910518}
+  - component: {fileID: 5953628845596910506}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1580947644323945522
+--- !u!4 &5953628845596910505
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
+  m_GameObject: {fileID: 5953628845596910517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.69315934, y: 8.329926, z: 0.20030099}
-  m_LocalScale: {x: 1.95, y: 1.95, z: 1.95}
+  m_LocalPosition: {x: 13.93, y: -2.76, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2215780984397549360
+--- !u!33 &5953628845596910504
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6577706802589530347
+  m_GameObject: {fileID: 5953628845596910517}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5953628845596910519
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
+  m_GameObject: {fileID: 5953628845596910517}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b04704752bf2794f8eafeb4093a76ce, type: 2}
+  - {fileID: 2100000, guid: a011bacf222c440489006f46e4503ba3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,26 +80,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &221497521205332175
-SphereCollider:
+--- !u!65 &5953628845596910518
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
+  m_GameObject: {fileID: 5953628845596910517}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8137849653536628338
+--- !u!54 &5953628845596910506
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
+  m_GameObject: {fileID: 5953628845596910517}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -110,22 +109,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &6793180347013715519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149324507291333804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e544e3128d1f1964b87522dd3d1d78d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuseTimer: 3
-  explosionForce: 1000
-  explosionRadius: 10
-  Explosion: {fileID: 2034308057132313268, guid: eeb0440312db6f941a8223b34d1826b8,
-    type: 3}
-  ExplosionSmoke: {fileID: 4390864813396475371, guid: 6c729199459be08488b6b15a12e97cce,
-    type: 3}

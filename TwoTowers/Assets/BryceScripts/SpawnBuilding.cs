@@ -37,7 +37,7 @@ public class SpawnBuilding : MonoBehaviour
             {
                 GameObject bomb = Instantiate(bombPrefab);
                 bomb.GetComponent<BombScript>().fuseTimer = 7;
-                bomb.GetComponent<BombScript>().explosionForce = 5000;
+                bomb.GetComponent<BombScript>().explosionForce = 2500;
                 locationToSpawn = this.transform.position;
                 locationToSpawn.x = transform.position.x + spawnOffset;
                 if (spawnOffset == 4)
