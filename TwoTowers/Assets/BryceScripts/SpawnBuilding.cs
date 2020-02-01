@@ -8,6 +8,7 @@ public class SpawnBuilding : MonoBehaviour
     private Vector3 locationToSpawn;
     public float blockSpawnRate = 0.2f; //time in seconds between each block spawning
     public GameObject blockPoolManager;
+    public GameObject gameManager;
     public GameObject bombPrefab;
     public GameObject[] ToDeleteOnStart;
 
@@ -18,6 +19,7 @@ public class SpawnBuilding : MonoBehaviour
         CreateTower();
         //blockPoolManager = GameObject.FindGameObjectWithTag("BlockManager");
         ToDeleteOnStart = GameObject.FindGameObjectsWithTag("TowerWalls");
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
 
     }
 
@@ -30,14 +32,16 @@ public class SpawnBuilding : MonoBehaviour
 
     IEnumerator BlockSpawn()
     {
+        int bombSpawnIndex = Random.Range(0, 5);
+
         int spawnOffset = -4;
         for (int i = 0; i < numBlocks; i++)
         {
-            if(i == 2 || i == 8)
+            if(i == bombSpawnIndex)
             {
                 GameObject bomb = Instantiate(bombPrefab);
                 bomb.GetComponent<BombScript>().fuseTimer = 7;
-                bomb.GetComponent<BombScript>().explosionForce = 2500;
+                bomb.GetComponent<BombScript>().explosionForce = 1500;
                 locationToSpawn = this.transform.position;
                 locationToSpawn.x = transform.position.x + spawnOffset;
                 if (spawnOffset == 4)
@@ -72,10 +76,8 @@ public class SpawnBuilding : MonoBehaviour
         }
         foreach(GameObject objToDelete in ToDeleteOnStart)
         {
-
             Destroy(objToDelete);
         }
-        
     }
 }
 
