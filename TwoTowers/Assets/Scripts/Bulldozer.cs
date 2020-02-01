@@ -27,7 +27,7 @@ public class Bulldozer : MonoBehaviour
     Transform BlockSpawner;
 
     [SerializeField]
-    private List<GameObject> debries;
+    private List<GameObject> debris;
 
     private bool spawning = false;
     private bool inProgress = false;
@@ -56,7 +56,7 @@ public class Bulldozer : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && inProgress == false)
         {
-            StartCoroutine(SpawnDebries(5));
+            StartCoroutine(SpawnDebris(5));
             StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
         }
     }
@@ -68,6 +68,7 @@ public class Bulldozer : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
 
+        yield return new WaitForSeconds(0.5f);
         driveFX.Play();
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
@@ -90,15 +91,22 @@ public class Bulldozer : MonoBehaviour
         inProgress = false;
     }
 
-    public IEnumerator SpawnDebries(int num)
+    public IEnumerator SpawnDebris(int num)
     {
         inProgress = true;
         spawning = true;
+        int spawnOffset = -2;
         for (int i = 0; i < num; i++)
         {
-            GameObject newDebrie = Instantiate(debries[Random.Range(0, debries.Count)]);
-            newDebrie.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f), 0);
+            if (spawnOffset == 2)
+            {
+                spawnOffset = -2;
+            }
+            GameObject newDebrie = Instantiate(debris[Random.Range(0, debris.Count)]);
+            newDebrie.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f) + spawnOffset, newDebrie.transform.position.y +( (i*2) +2));
+
             yield return new WaitForSeconds(0.3f);
+            spawnOffset += 2;
         }
         spawning = false;
     }
