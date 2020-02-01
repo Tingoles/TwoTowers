@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2c19ea10-22a4-45d2-a044-e91fc9989297}">
+        <property name="assetPath">
+            <value>Recorded/MetalCheeseGrater/Heavy2.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.36562358276643991</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f8383047-9fb5-4f2e-95bd-603cf3ee7420}</destination>
+        </relationship>
+    </object>
+</objects>

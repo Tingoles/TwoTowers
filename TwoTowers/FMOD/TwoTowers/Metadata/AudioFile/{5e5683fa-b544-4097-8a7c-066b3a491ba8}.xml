@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{5e5683fa-b544-4097-8a7c-066b3a491ba8}">
+        <property name="assetPath">
+            <value>Recorded/MetalCheeseGrater/Light1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.5625170068027211</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f8383047-9fb5-4f2e-95bd-603cf3ee7420}</destination>
+        </relationship>
+    </object>
+</objects>

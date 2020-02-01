@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ab3adcff-7e3d-4d6a-ba6a-25993667e1ab}">
+        <property name="assetPath">
+            <value>Recorded/WoodClatter/Light02.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.7494791666666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f8383047-9fb5-4f2e-95bd-603cf3ee7420}</destination>
+        </relationship>
+    </object>
+</objects>

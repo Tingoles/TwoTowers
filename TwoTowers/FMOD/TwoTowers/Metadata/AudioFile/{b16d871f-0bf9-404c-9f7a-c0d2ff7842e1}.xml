@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{b16d871f-0bf9-404c-9f7a-c0d2ff7842e1}">
+        <property name="assetPath">
+            <value>Impacts/Concrete/ConcreteBlock01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.16916666666666666</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f8383047-9fb5-4f2e-95bd-603cf3ee7420}</destination>
+        </relationship>
+    </object>
+</objects>
