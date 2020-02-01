@@ -12,8 +12,8 @@ public class GrabberP2 : GrabberInput
 
     void GetInputs()
     {
-        m_inputVec.x = Input.GetAxis("Horizontal2");
-        m_inputVec.y = Input.GetAxis("Vertical2");
-        m_grabInput = Input.GetKeyDown(KeyCode.Period);
+        m_inputVec.x = Input.GetAxis("HorizontalController2");
+        m_inputVec.y = Input.GetAxis("VerticalController2");
+        m_grabInput = Input.GetButtonDown("Grab2");
     }
 }
