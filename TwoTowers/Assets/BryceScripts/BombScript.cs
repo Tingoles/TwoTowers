@@ -45,11 +45,12 @@ public class BombScript : MonoBehaviour
             ParticleSystem ps1 = Instantiate(Explosion);
             ps1.transform.position = transform.position;
             ps1.Play();
+            Destroy(ps1.gameObject, ps1.main.duration);
 
             ParticleSystem ps2 = Instantiate(ExplosionSmoke);
             ps2.transform.position = transform.position;
             ps2.Play();
-
+            Destroy(ps2.gameObject, ps2.main.duration);
 
             Camera.main.GetComponent<CameraShake>().ShakeCamera(1.0f);
             //
