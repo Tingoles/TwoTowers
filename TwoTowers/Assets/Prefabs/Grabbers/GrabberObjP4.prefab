@@ -168,7 +168,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -299,7 +299,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -430,7 +430,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -561,7 +561,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -692,7 +692,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 4823780745389184075}
   - component: {fileID: 4823780745389184074}
   - component: {fileID: 4823780745389184085}
-  - component: {fileID: 2645192847480883715}
+  - component: {fileID: 9215227755081677547}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -760,6 +760,7 @@ MonoBehaviour:
   m_grabberPos: {fileID: 4823780745980489859}
   m_endSection: {fileID: 4823780745540781414}
   m_grabbed: 0
+  m_grabAnim: {fileID: 1808032102973186151}
 --- !u!54 &4823780745389184074
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -814,7 +815,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2645192847480883715
+--- !u!114 &9215227755081677547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -950,7 +951,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1081,7 +1082,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1122,6 +1123,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4823780745980489859}
+  - {fileID: 8619160022949858589}
   m_Father: {fileID: 4823780744133721765}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1213,7 +1215,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1344,7 +1346,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1475,7 +1477,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1650,7 +1652,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1781,7 +1783,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1912,7 +1914,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -2043,7 +2045,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -2174,7 +2176,7 @@ HingeJoint:
   m_Limits:
     min: -45
     max: 45
-    bounciness: 0
+    bounciness: 1
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -2183,3 +2185,99 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1001 &6451877352051183353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4823780745540781421}
+    m_Modifications:
+    - target: {fileID: 1751792243848278519, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_Name
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2666638
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.274295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9616456
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -31.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 202d32dc5660e07449dab3c09c37989d, type: 3}
+--- !u!4 &8619160022949858589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3320494446617461732, guid: 202d32dc5660e07449dab3c09c37989d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6451877352051183353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1808032102973186151 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4656378807880396446, guid: 202d32dc5660e07449dab3c09c37989d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6451877352051183353}
+  m_PrefabAsset: {fileID: 0}
