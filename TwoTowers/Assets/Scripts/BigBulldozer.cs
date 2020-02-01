@@ -39,5 +39,9 @@ public class BigBulldozer : MonoBehaviour
         driveFX.Stop();
 
         shovedFX.Play();
+        foreach(GameObject bully in bulldozers)
+        {
+            bully.SetActive(true);
+        }
     }
 }

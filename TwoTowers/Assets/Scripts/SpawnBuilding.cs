@@ -8,7 +8,6 @@ public class SpawnBuilding : MonoBehaviour
     private Vector3 locationToSpawn;
     public float blockSpawnRate = 0.2f; //time in seconds between each block spawning
     public GameObject blockPoolManager;
-    public GameObject gameManager;
     public GameObject bombPrefab;
     public GameObject[] ToDeleteOnStart;
 
@@ -19,7 +18,7 @@ public class SpawnBuilding : MonoBehaviour
         CreateTower();
         //blockPoolManager = GameObject.FindGameObjectWithTag("BlockManager");
         ToDeleteOnStart = GameObject.FindGameObjectsWithTag("TowerWalls");
-        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+
 
     }
 
