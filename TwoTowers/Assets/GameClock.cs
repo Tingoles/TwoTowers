@@ -11,7 +11,7 @@ public class GameClock : MonoBehaviour
 
     public float timeRemaining;
 
-    private bool countdown = true;
+    public bool countdown = true;
 
     private TextMeshProUGUI textMesh;
 
@@ -23,6 +23,7 @@ public class GameClock : MonoBehaviour
     {
         textMesh = GetComponent<TextMeshProUGUI>();
         timeRemaining = startingTime;
+        textMesh.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining);
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class GameClock : MonoBehaviour
                 delayCountdown.timeRemaining = delay;
                 delayCountdown.countdown = true;
             }
-            textMesh.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining) + "s";
+            textMesh.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining);
         }
     }
 }
