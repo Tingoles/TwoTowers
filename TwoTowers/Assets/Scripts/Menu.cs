@@ -11,6 +11,7 @@ public enum MenuButton
 public class Menu : MonoBehaviour
 {
     public List<SpriteRenderer> icons;
+    public GameObject Bomb;
 
     private int buttonHovered = 0;
     private bool doOnceLeft = true;
@@ -72,11 +73,25 @@ public class Menu : MonoBehaviour
             buttonHovered = 0;
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Grab1"))
         {
             buttonPushed = true;
-            StartCoroutine(StartTruck());
+            if(buttonHovered == 1)
+            {
+                StartCoroutine(QuitGame());
+            }
+            else
+            {
+                StartCoroutine(StartTruck());
+            }
         }
+    }
+
+    IEnumerator QuitGame()
+    {
+        Instantiate<GameObject>(Bomb);
+        yield return new WaitForSeconds(4.0f);
+        Application.Quit();
     }
 
     IEnumerator StartTruck()
