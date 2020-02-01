@@ -95,8 +95,8 @@ public class Bulldozer : MonoBehaviour
         animator.SetFloat("Speed", 1.0f);
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
-            float tl = t / forwardTime;
-            transform.position = Vector3.Lerp(startPos, targetPos, tl);
+            float tl = (t / forwardTime)*0.2f;
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, tl);
             yield return null;
         }
         animator.SetFloat("Speed", 0.0f);
@@ -131,6 +131,7 @@ public class Bulldozer : MonoBehaviour
             GameObject newDebris = Instantiate(debris[Random.Range(0, debris.Count)]);
             newDebris.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f) + spawnOffset, newDebris.transform.position.y +( (i*2) +2));
             newDebris.transform.parent = blockPoolManager.transform;
+            newDebris.GetComponent<Rigidbody>().freezeRotation = false;
             blockPoolManager.GetComponent<BlockManager>().activeBlocks.Add(newDebris);
 
             yield return new WaitForSeconds(0.3f);

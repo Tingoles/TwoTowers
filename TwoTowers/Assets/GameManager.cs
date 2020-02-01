@@ -6,9 +6,26 @@ public class GameManager : MonoBehaviour
 {
     public List<GameObject> bulldozers = new List<GameObject>();
 
+    public GameObject bomb;
+
+    public float timeTillBomb;
+
     private void Start()
     {
         StartCoroutine(blockBulldozerMechanics());
+        timeTillBomb = Random.Range(20.0f, 30.0f);
+    }
+
+    private void Update()
+    {
+        timeTillBomb -= Time.deltaTime;
+        if(timeTillBomb < 0)
+        {
+            GameObject obj = Instantiate(bomb);
+            obj.transform.position = new Vector3(Random.Range(-8.0f, 8.0f), 12.0f);
+            obj.GetComponent<BombScript>().fuseTimer = 12.0f;
+            timeTillBomb = Random.Range(20.0f, 30.0f);
+        }
     }
 
     IEnumerator blockBulldozerMechanics()

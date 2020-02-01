@@ -62,7 +62,7 @@ public class GrabberController : MonoBehaviour
         {
             newPos.y = m_maxPos.position.y;
         }
-        if (transform.position.x < m_minPos.position.x)
+        if (transform.position.y < m_minPos.position.y)
         {
             newPos.y = m_minPos.position.y;
         }
@@ -78,6 +78,8 @@ public class GrabberController : MonoBehaviour
         {
             cols[0].gameObject.AddComponent<FixedJoint>();
             cols[0].gameObject.GetComponent<FixedJoint>().connectedBody = m_endSection.GetComponent<Rigidbody>();
+            cols[0].gameObject.GetComponent<Collider>().enabled = false;
+
             m_grabbedObj = cols[0].gameObject;
         }
     }
@@ -85,11 +87,21 @@ public class GrabberController : MonoBehaviour
     void Drop()
     {
         m_grabbed = false;
-        Destroy(m_grabbedObj.GetComponent<FixedJoint>());
+        if (m_grabbedObj)
+        {
+            Destroy(m_grabbedObj.GetComponent<FixedJoint>());
+            m_grabbedObj.GetComponent<Collider>().enabled = true;
+
+        }
     }
 
     void OnDrawGizmos()
     {
         Gizmos.DrawSphere(m_grabberPos.position, .5f);
+        Gizmos.DrawSphere(m_maxPos.position, .5f);
+        Gizmos.DrawSphere(m_minPos.position, .5f);
+
+
+
     }
 }
