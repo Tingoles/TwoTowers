@@ -59,6 +59,14 @@ public class Bulldozer : MonoBehaviour
             StartCoroutine(SpawnDebris(5));
             StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
         }
+
+
+    }
+
+    public void CreateCubes()
+    {
+        StartCoroutine(SpawnDebris(5));
+        StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
     }
 
     IEnumerator Move(float forwardTime, float reverseDelay, float reverseTime)
