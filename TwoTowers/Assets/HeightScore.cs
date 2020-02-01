@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class HeightScore : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float topHeight = 0;
+
+    BlockManager blockManager;
+
+    private void Start()
     {
-        
+        blockManager = GameObject.FindGameObjectWithTag("BlockManager").GetComponent<BlockManager>();
     }
 
     // Update is called once per frame
-    void Update()
+    void MeasureHeight()
     {
-        
+        foreach (GameObject block in blockManager.activeBlocks)
+        {
+            float blockY = block.transform.position.y;
+            if (blockY > topHeight)
+            {
+                topHeight = blockY;
+            }
+        }
     }
 }
