@@ -131,6 +131,7 @@ public class Bulldozer : MonoBehaviour
             GameObject newDebris = Instantiate(debris[Random.Range(0, debris.Count)]);
             newDebris.transform.position = BlockSpawner.position + new Vector3(Random.Range(-0.1f, 0.1f) + spawnOffset, newDebris.transform.position.y +( (i*2) +2));
             newDebris.transform.parent = blockPoolManager.transform;
+            newDebris.GetComponent<Rigidbody>().freezeRotation = false;
             blockPoolManager.GetComponent<BlockManager>().activeBlocks.Add(newDebris);
 
             yield return new WaitForSeconds(0.3f);
