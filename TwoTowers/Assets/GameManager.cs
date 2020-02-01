@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject bomb;
 
+    public GameClock gameClock;
+    public BlockManager blockManager;
+
     public float timeTillBomb;
 
     private void Start()
@@ -37,6 +40,8 @@ public class GameManager : MonoBehaviour
 
             bully.GetComponent<Bulldozer>().CreateCubes();
         }
+        gameClock.countdown = true;
+        blockManager.calcHeights = true;
     }
 
 }
