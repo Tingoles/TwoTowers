@@ -120,6 +120,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{c19770c9-46a4-43a6-ba3c-adef3b3c5524}">
+        <property name="volume">
+            <value>-6</value>
+        </property>
         <property name="name">
             <value>Generic</value>
         </property>
@@ -255,7 +258,7 @@
             <value>0</value>
         </property>
         <property name="value">
-            <value>4</value>
+            <value>0</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{9b11cee1-ab9e-4947-94e5-7db0fad4e050}">
@@ -263,7 +266,7 @@
             <value>1</value>
         </property>
         <property name="value">
-            <value>-4</value>
+            <value>-6</value>
         </property>
     </object>
 </objects>
