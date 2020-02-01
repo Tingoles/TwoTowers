@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BlockManager
+  - TowerWalls
   layers:
   - Default
   - TransparentFX
