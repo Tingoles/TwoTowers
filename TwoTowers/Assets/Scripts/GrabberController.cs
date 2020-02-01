@@ -10,6 +10,7 @@ public class GrabberController : MonoBehaviour
     public bool m_grabbed = false;
     GameObject m_grabbedObj;
     GrabberInput m_input;
+    public FMODUnity.StudioEventEmitter emitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +37,9 @@ public class GrabberController : MonoBehaviour
                 Drop();
             }
         }
-        transform.position += m_input.m_inputVec * m_speed * Time.deltaTime;
+        Vector3 velocity = m_input.m_inputVec * m_speed * Time.deltaTime;
+        transform.position += velocity;
+        updateFmodParams(velocity);
     }
 
     void Grab()
@@ -61,5 +64,26 @@ public class GrabberController : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawSphere(m_grabberPos.position, .5f);
+    }
+
+    void updateFmodParams(Vector3 velocity)
+    {
+        float xVelocity = velocity.x;
+        if(xVelocity > -0.005f && xVelocity < 0.005f)
+        {
+            emitter.Stop();
+        }
+        else if (xVelocity < 0) 
+        {
+            if (!emitter.IsPlaying()) emitter.Play();
+            xVelocity *= -1.0f;
+        }
+        else
+        {
+            if (!emitter.IsPlaying()) emitter.Play();
+        }
+            
+        print(xVelocity);
+        emitter.SetParameter("Velocity", xVelocity);
     }
 }

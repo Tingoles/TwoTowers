@@ -184,7 +184,11 @@
             <value>0.950000048</value>
         </property>
     </object>
-    <object class="SpatialiserEffect" id="{b296aee6-13e8-4541-9bfe-b0d171953430}"/>
+    <object class="SpatialiserEffect" id="{b296aee6-13e8-4541-9bfe-b0d171953430}">
+        <property name="maximumDistance">
+            <value>60</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{bd007a43-2f6c-471d-8ec9-ab38e6c3f70e}"/>
     <object class="AutomationCurve" id="{93aa75d8-ed7f-45bf-8747-bd2c116985a4}">
         <relationship name="parameter">
