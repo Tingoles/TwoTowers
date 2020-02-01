@@ -10,6 +10,7 @@ public class GrabberController : MonoBehaviour
     public bool m_grabbed = false;
     GameObject m_grabbedObj;
     GrabberInput m_input;
+    public Animator m_grabAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class GrabberController : MonoBehaviour
     void Update()
     {
         Movement();
+        m_grabAnim.SetBool("Grabbed", m_grabbed);
     }
 
     void Movement()
