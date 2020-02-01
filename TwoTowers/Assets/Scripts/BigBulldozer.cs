@@ -21,7 +21,7 @@ public class BigBulldozer : MonoBehaviour
     private void Start()
     {
         startPos = this.transform.position;
-        StartCoroutine(WipeStage());
+        //StartCoroutine(WipeStage());
     }
 
     public IEnumerator WipeStage() 
