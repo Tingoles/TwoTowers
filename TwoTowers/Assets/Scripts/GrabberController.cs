@@ -83,7 +83,6 @@ public class GrabberController : MonoBehaviour
             if (!emitter.IsPlaying()) emitter.Play();
         }
             
-        print(xVelocity);
         emitter.SetParameter("Velocity", xVelocity);
     }
 }

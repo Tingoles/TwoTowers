@@ -6,6 +6,12 @@ public class Debris : MonoBehaviour
 {
     [SerializeField]
     private ParticleSystem smokePuff;
+    FMODUnity.StudioEventEmitter emitter;
+
+    private void Start()
+    {
+        emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,6 +23,14 @@ public class Debris : MonoBehaviour
                 ps.Play();
                 Destroy(ps.gameObject, ps.main.duration);
             }
+        }
+
+        float velocity = GetComponent<Rigidbody>().velocity.magnitude/30.0f;
+        if (velocity > 0.05)
+        {
+            print(velocity);
+            emitter.SetParameter("Velocity", velocity);
+            emitter.Play();
         }
     }
 }

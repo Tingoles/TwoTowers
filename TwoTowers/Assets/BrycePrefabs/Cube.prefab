@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1337114889104719560}
   - component: {fileID: 7438992963402667270}
   - component: {fileID: 6913352528656949118}
+  - component: {fileID: 5555515443225700729}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -123,13 +124,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
+  Event: event:/Main/Impacts/Metal
+  PlayEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
-  Preload: 0
+  Preload: 1
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &5555515443225700729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367068615990230313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
