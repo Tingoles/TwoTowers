@@ -125,3 +125,7 @@ MonoBehaviour:
   fuseTimer: 3
   explosionForce: 1000
   explosionRadius: 10
+  Explosion: {fileID: 2034308057132313268, guid: eeb0440312db6f941a8223b34d1826b8,
+    type: 3}
+  ExplosionSmoke: {fileID: 4390864813396475371, guid: 6c729199459be08488b6b15a12e97cce,
+    type: 3}
