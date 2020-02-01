@@ -106,7 +106,7 @@ public class Menu : MonoBehaviour
         }
         bulldozer.GetComponent<LerpTowards>().start = true;
         yield return new WaitForSeconds(1.5f);
-        FindObjectOfType<Transition>().LoadScene("Menu");
+        FindObjectOfType<Transition>().LoadScene("BryceScene");
 
     }
 }
