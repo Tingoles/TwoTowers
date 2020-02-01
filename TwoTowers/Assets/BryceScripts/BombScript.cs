@@ -37,9 +37,10 @@ public class BombScript : MonoBehaviour
                 if (explodedObj.GetComponent<Rigidbody>())
                 {
                     explodedObj.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRadius);
+                    explodedObj.GetComponent<Rigidbody>().angularVelocity = explodedObj.GetComponent<Rigidbody>().transform.right * Random.Range(-15, 15);
+
                 }
             }
-
             //Bomb fx
             ParticleSystem ps1 = Instantiate(Explosion);
             ps1.transform.position = transform.position;
@@ -56,5 +57,4 @@ public class BombScript : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 }
