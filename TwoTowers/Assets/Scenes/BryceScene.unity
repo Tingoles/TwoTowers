@@ -390,7 +390,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 7367068615990230313, guid: 72dddab200e915e42a3d857bd14d32a8,
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -516,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 4823780744133721765, guid: 831e9f56d2908814a9009c2be5a315c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45
+      value: 66.8
       objectReference: {fileID: 0}
     - target: {fileID: 4823780744133721765, guid: 831e9f56d2908814a9009c2be5a315c8,
         type: 3}
@@ -546,7 +546,7 @@ PrefabInstance:
     - target: {fileID: 4823780744133721765, guid: 831e9f56d2908814a9009c2be5a315c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4823780744133721765, guid: 831e9f56d2908814a9009c2be5a315c8,
         type: 3}
@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -727,13 +727,23 @@ PrefabInstance:
         type: 3}
       propertyPath: debris.Array.data[0]
       value: 
-      objectReference: {fileID: 7367068615990230313, guid: 72dddab200e915e42a3d857bd14d32a8,
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
     - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: moveDis
       value: 10.5
       objectReference: {fileID: 0}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: shovedFX
+      value: 
+      objectReference: {fileID: 1550503977}
+    - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+        type: 3}
+      propertyPath: driveFX
+      value: 
+      objectReference: {fileID: 1657410276}
     - target: {fileID: 309728529459932762, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_Constraints
@@ -830,7 +840,9 @@ MonoBehaviour:
   moveDistance: 80
   shovedFX: {fileID: 1550503977}
   driveFX: {fileID: 1657410276}
-  bulldozers: []
+  bulldozers:
+  - {fileID: 1752299762}
+  - {fileID: 1357862412}
 --- !u!65 &1013803676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -902,7 +914,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1070570831
 PrefabInstance:
@@ -1094,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 4823780744133721765, guid: 36e8e898485a8fe4b906237f553a5609,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45
+      value: 66.8
       objectReference: {fileID: 0}
     - target: {fileID: 4823780744133721765, guid: 36e8e898485a8fe4b906237f553a5609,
         type: 3}
@@ -1124,7 +1136,7 @@ PrefabInstance:
     - target: {fileID: 4823780744133721765, guid: 36e8e898485a8fe4b906237f553a5609,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4823780744133721765, guid: 36e8e898485a8fe4b906237f553a5609,
         type: 3}
@@ -1153,6 +1165,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e8e898485a8fe4b906237f553a5609, type: 3}
+--- !u!1 &1357862412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 309728529459932765, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 789039645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1389723992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,7 +5978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &1657410276 stripped
 ParticleSystem:
@@ -6143,6 +6161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9010d95adb06ad648a89a420e366b90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1752299762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 309728529459932765, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 309728529302340300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1870962658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,7 +6361,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &309728529302340300
 PrefabInstance:
@@ -6394,7 +6418,7 @@ PrefabInstance:
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 309728529459932761, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -6426,7 +6450,7 @@ PrefabInstance:
         type: 3}
       propertyPath: debris.Array.data[0]
       value: 
-      objectReference: {fileID: 7367068615990230313, guid: 72dddab200e915e42a3d857bd14d32a8,
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
     - target: {fileID: 309728529459932763, guid: f9a62dc82809d7e45b3f5becce9f8d3d,
         type: 3}
@@ -6527,6 +6551,12 @@ PrefabInstance:
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
+    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
+        type: 3}
+      propertyPath: BlocksToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
+        type: 3}
     - target: {fileID: 1751843607279062020, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: m_LocalPosition.x
