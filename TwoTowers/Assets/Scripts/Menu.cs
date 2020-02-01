@@ -105,7 +105,7 @@ public class Menu : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         bulldozer.GetComponent<LerpTowards>().start = true;
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.5f);
         FindObjectOfType<Transition>().LoadScene("Menu");
 
     }
