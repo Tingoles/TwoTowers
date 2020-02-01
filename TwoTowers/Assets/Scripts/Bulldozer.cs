@@ -32,6 +32,11 @@ public class Bulldozer : MonoBehaviour
     private bool spawning = false;
     private bool inProgress = false;
 
+    [SerializeField]
+    private ParticleSystem shovedFX;
+    [SerializeField]
+    private ParticleSystem driveFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,13 +68,16 @@ public class Bulldozer : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
 
-        for(float t = 0; t < forwardTime; t += Time.deltaTime)
+        driveFX.Play();
+        for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
             float tl = t / forwardTime;
             transform.position = Vector3.Lerp(startPos, targetPos, tl);
             yield return null;
         }
+        driveFX.Stop();
 
+        shovedFX.Play();
         yield return new WaitForSeconds(reverseDelay);
 
 
