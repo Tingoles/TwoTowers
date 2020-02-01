@@ -39,7 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4823780744133721765}
-  - component: {fileID: 5806504565031201684}
   - component: {fileID: 2696408026266689030}
   - component: {fileID: 6581568107222603709}
   m_Layer: 0
@@ -81,18 +80,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5806504565031201684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4823780744133721754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41123079cf45daa48b4be105c7034687, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2696408026266689030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +874,7 @@ GameObject:
   - component: {fileID: 4823780745389184074}
   - component: {fileID: 4823780745389184085}
   - component: {fileID: 8640346484829634409}
+  - component: {fileID: 1215361497481176241}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1004,6 +992,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_inputVec: {x: 0, y: 0, z: 0}
   m_grabInput: 0
+--- !u!114 &1215361497481176241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823780745389184072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41123079cf45daa48b4be105c7034687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4823780745408689313
 GameObject:
   m_ObjectHideFlags: 0
