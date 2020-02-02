@@ -11,7 +11,7 @@ public class GrabberController : MonoBehaviour
     public Transform m_grabberPos;
     public GameObject m_endSection;
     public bool m_grabbed = false;
-    List<GameObject> m_grabbedObj = new List<GameObject>() ;
+    List<GameObject> m_grabbedObj = new List<GameObject>();
     GrabberInput m_input;
     public Animator m_grabAnim;
     public Transform m_minPos;
@@ -116,7 +116,7 @@ public class GrabberController : MonoBehaviour
     {
         m_grabbed = true;
         Collider[] cols = Physics.OverlapSphere(m_grabberPos.position, 0.8f, LayerMask.GetMask("Pickable"));
-       
+
         if (cols.Length == 0) return;
         foreach (Collider collis in cols)
         {
@@ -125,20 +125,20 @@ public class GrabberController : MonoBehaviour
             collis.gameObject.GetComponent<FixedJoint>().connectedBody = m_endSection.GetComponent<Rigidbody>();
             collis.gameObject.GetComponent<Collider>().enabled = false;
 
-           m_grabbedObj.Add(collis.gameObject);
+            m_grabbedObj.Add(collis.gameObject);
 
         }
     }
 
-    void Drop()
+    public void Drop()
     {
         m_grabbed = false;
         foreach (GameObject g in m_grabbedObj)
         {
-            if(g.GetComponent<FixedJoint>())
+            if (g.GetComponent<FixedJoint>())
                 Destroy(g.GetComponent<FixedJoint>());
             g.GetComponent<Collider>().enabled = true;
-
+            m_grabAnim.SetBool("Grabbed", m_grabbed);
         }
     }
 
@@ -167,7 +167,7 @@ public class GrabberController : MonoBehaviour
         bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
 
         if (xVelocity > -0.005f && xVelocity < 0.005f)
-        { 
+        {
             if (isPlaying)
             {
                 m_motorEndInstance = RuntimeManager.CreateInstance(m_motorEndRef);
@@ -243,4 +243,5 @@ public class GrabberController : MonoBehaviour
         m_extentionInstance.setParameterByID(m_extentionVelocityID, yVelocity);
         m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
+
 }

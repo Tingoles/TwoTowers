@@ -29,7 +29,7 @@ public class BlockManager : MonoBehaviour
             foreach (GameObject block in activeBlocks)
             {
                 Vector3 blockPos = block.transform.position;
-                if (blockPos.x < 0)
+                if (blockPos.x < 0 && blockPos.x > -19.5)
                 {
                     if (blockPos.y > leftTopHeight)
                     {
@@ -40,7 +40,7 @@ public class BlockManager : MonoBehaviour
                         leftWorldUI.GetComponentInChildren<TextMeshProUGUI>().text = (h == Mathf.Round(h) ? h + ".0" : h + "") + "m";
                     }
                 }
-                else
+                else if (blockPos.x < 19.5)
                 {
                     if (blockPos.y > rightTopHeight)
                     {

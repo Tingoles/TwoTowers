@@ -34,6 +34,7 @@ public class GameClock : MonoBehaviour
             timeRemaining -= Time.deltaTime;
             if (timeRemaining < 0)
             {
+                DisableControls();
                 timeRemaining = 0;
                 countdown = false;
                 float delay = 8.4f;
@@ -42,6 +43,15 @@ public class GameClock : MonoBehaviour
                 delayCountdown.countdown = true;
             }
             textMesh.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining);
+        }
+    }
+
+    void DisableControls()
+    {
+        foreach (GrabberController control in FindObjectsOfType<GrabberController>())
+        {
+            control.Drop();
+            control.m_active = false;
         }
     }
 }

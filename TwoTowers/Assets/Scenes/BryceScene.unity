@@ -452,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: BlocksToSpawn.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -462,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: BlocksToSpawn.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -478,7 +478,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -500,7 +500,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
+      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -517,7 +517,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[1]
       value: 
-      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
+      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -1532,7 +1532,7 @@ PrefabInstance:
     - target: {fileID: 7400710050099398892, guid: 7ac50566b2912294e880f90101922d2d,
         type: 3}
       propertyPath: startingTime
-      value: 120
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7400710050099398892, guid: 7ac50566b2912294e880f90101922d2d,
         type: 3}
@@ -6555,10 +6555,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1705528800}
   - component: {fileID: 1705528799}
+  - component: {fileID: 1705528798}
   - component: {fileID: 1705528802}
   - component: {fileID: 1705528801}
   - component: {fileID: 1705528803}
-  - component: {fileID: 1705528798}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6566,19 +6566,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1705528798
-MonoBehaviour:
+--- !u!81 &1705528798
+AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705528797}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: -1
 --- !u!20 &1705528799
 Camera:
   m_ObjectHideFlags: 0
