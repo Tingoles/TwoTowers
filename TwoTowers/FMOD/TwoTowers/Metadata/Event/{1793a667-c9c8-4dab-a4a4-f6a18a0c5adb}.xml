@@ -46,7 +46,7 @@
     </object>
     <object class="MasterTrack" id="{4502e1be-0076-4b16-8cea-7878736d1910}">
         <relationship name="automationTracks">
-            <destination>{c6e6ea83-dd5b-49a1-a796-0c12dd74b920}</destination>
+            <destination>{8acf5304-e1b9-40f1-a39d-8798e4b5a825}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{5bb7600d-4144-47c7-b1eb-cb99fc112423}</destination>
@@ -127,7 +127,7 @@
             <destination>{36a135c2-8067-4fdb-8c75-065d5a666689}</destination>
         </relationship>
     </object>
-    <object class="AutomationTrack" id="{c6e6ea83-dd5b-49a1-a796-0c12dd74b920}">
+    <object class="AutomationTrack" id="{8acf5304-e1b9-40f1-a39d-8798e4b5a825}">
         <relationship name="automator">
             <destination>{d3361a73-3c86-4683-812f-32c5724631b1}</destination>
         </relationship>
@@ -259,7 +259,7 @@
             <value>-80</value>
         </property>
         <property name="attackTime">
-            <value>340</value>
+            <value>200</value>
         </property>
         <property name="holdTime">
             <value>0</value>
@@ -285,19 +285,19 @@
             <value>540</value>
         </property>
         <property name="peakValue">
-            <value>-10</value>
+            <value>-14</value>
         </property>
         <property name="holdTime">
             <value>0</value>
         </property>
         <property name="decayTime">
-            <value>358.974335</value>
+            <value>140</value>
         </property>
         <property name="sustainValue">
             <value>1.1111145</value>
         </property>
         <property name="releaseTime">
-            <value>600</value>
+            <value>120</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{d5900981-c0f1-4bad-b414-24b00f612415}">

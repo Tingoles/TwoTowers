@@ -775,7 +775,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Main/Bulldozer/Bulldozer
   PlayEvent: 0
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -797,6 +797,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/Main/Bulldozer/ReversingBeep
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 80
+--- !u!1 &665771131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739530113907588878, guid: 831e9f56d2908814a9009c2be5a315c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 762579570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &665771134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665771131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Claws/ClawClose
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 80
+--- !u!114 &665771135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665771131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Claws/ClawOpen
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 80
+--- !u!114 &665771136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665771131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Claws/ClawConnect
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -923,6 +998,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa214d07559b31e4ebf54d56d8e5bd51, type: 2}
+    - target: {fileID: 4503750733237582499, guid: 831e9f56d2908814a9009c2be5a315c8,
+        type: 3}
+      propertyPath: theClaw
+      value: 
+      objectReference: {fileID: 665771131}
     m_RemovedComponents:
     - {fileID: 4823780745980489858, guid: 831e9f56d2908814a9009c2be5a315c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 831e9f56d2908814a9009c2be5a315c8, type: 3}
@@ -1952,6 +2032,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55c30acd71e904344a378b61e4b73fcd, type: 2}
+    - target: {fileID: 8640346484829634409, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: theClaw
+      value: 
+      objectReference: {fileID: 1705332417}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e8e898485a8fe4b906237f553a5609, type: 3}
 --- !u!1 &1389723992
@@ -2020,7 +2105,7 @@ PrefabInstance:
     - target: {fileID: 7400710050099398892, guid: 7ac50566b2912294e880f90101922d2d,
         type: 3}
       propertyPath: startingTime
-      value: 120
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7400710050099398892, guid: 7ac50566b2912294e880f90101922d2d,
         type: 3}
@@ -2277,6 +2362,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400710049819545938, guid: 7ac50566b2912294e880f90101922d2d,
+        type: 3}
+      propertyPath: timeRemaining
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400710049819545938, guid: 7ac50566b2912294e880f90101922d2d,
+        type: 3}
+      propertyPath: countdown
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ac50566b2912294e880f90101922d2d, type: 3}
@@ -7288,6 +7383,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
+--- !u!1 &1705332417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739530113907588878, guid: 36e8e898485a8fe4b906237f553a5609,
+    type: 3}
+  m_PrefabInstance: {fileID: 1345648258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1705528797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7509,7 +7610,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Main/Bulldozer/Bulldozer
   PlayEvent: 0
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -7532,10 +7633,10 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Main/Bulldozer/ReversingBeep
   PlayEvent: 0
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
-  Preload: 0
+  Preload: 1
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
