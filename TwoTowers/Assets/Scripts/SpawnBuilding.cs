@@ -77,6 +77,7 @@ public class SpawnBuilding : MonoBehaviour
         {
             Destroy(objToDelete);
         }
+
     }
 }
 
