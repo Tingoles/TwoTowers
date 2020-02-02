@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9212935963546708560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Concrete/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-9131605287128810566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,15 +32,49 @@ MonoBehaviour:
   Path: event:/Main/Impacts/Concrete
   guid: 016cbdebca09df48893f469f102fed6c
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -947735503317068943}
+  - {fileID: -9212935963546708560}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
+--- !u!114 &-9078169565875074464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wood/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-8950482894491106718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MotorExtend/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8871839376499613058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,7 +92,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-8760952069131506500
+--- !u!114 &-8810997874057822589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,37 +102,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorExtend/Velocity
+  m_Name: parameter:/Block/Surface
   m_EditorClassIdentifier: 
-  Name: Velocity
+  Name: Surface
   Min: 0
-  Max: 1
+  Max: 6
   Default: 0
-  Exists: 0
---- !u!114 &-8759787745045572243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/MotorMain
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/MotorMain
-  guid: 20ec3cc5743a754ea445e5ef3ead0ef0
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3631692090648678418}
-  MinDistance: 1
-  MaxDistance: 60
-  Length: 125
+  Exists: 1
 --- !u!114 &-8725800142999397334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,23 +143,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-8721682994736728010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Generic/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-8694096228775852188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,23 +177,6 @@ MonoBehaviour:
   Max: 6
   Default: 0
   Exists: 0
---- !u!114 &-8464390037516816526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorMain/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-8449037562324131658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,11 +192,11 @@ MonoBehaviour:
   Path: /Archives/Projects/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
     Bank.bank
   SubDir: 
-  lastModified: 637161978050000000
+  lastModified: 637161672170000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1728128
+    Value: 615584
   Exists: 1
 --- !u!114 &-8187881011728219514
 MonoBehaviour:
@@ -239,7 +232,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-7881574589883892195
+--- !u!114 &-7897614716751661600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,37 +242,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wood/Velocity
+  m_Name: parameter:/Generic/Velocity
   m_EditorClassIdentifier: 
   Name: Velocity
   Min: 0
   Max: 1
   Default: 0
-  Exists: 0
---- !u!114 &-7855637872305980554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/MotorExtend
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/MotorExtend
-  guid: 67a69317c8c9ab4da4a4f6a18a0c5adb
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 368821296800534809}
-  MinDistance: 1
-  MaxDistance: 60
-  Length: 23
+  Exists: 1
 --- !u!114 &-7738667478734070645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +351,27 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6694960121753679315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Bryce/Desktop/Repos/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
+    Bank.strings.bank
+  SubDir: 
+  lastModified: 637161925327278758
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1512
+  Exists: 1
 --- !u!114 &-6680075745316217042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,46 +406,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-6311803023513999692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/MotorStart
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/MotorStart
-  guid: 83f5648417bf404b84599a7ecb5f1fac
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 250
---- !u!114 &-6204783527676614828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Metal/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-6107139701270783104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,23 +434,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/MainMotor/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-5633736822360822670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorExtend/Velocity
   m_EditorClassIdentifier: 
   Name: Velocity
   Min: 0
@@ -548,6 +481,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 60
   Length: 125
+--- !u!114 &-5445909607905878139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Atmos/Atmos
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Atmos/Atmos
+  guid: f2f55534c0f77244a9c04e12a046224b
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 22000
 --- !u!114 &-5421276072249361933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +587,7 @@ MonoBehaviour:
   Path: event:/Main/Explosion/Explosion
   guid: 057d0d6d49397247ac70a5072d6209c6
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -639,6 +595,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 150
   Length: 2845
+--- !u!114 &-5052582187031330302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Block/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5042621235366072570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,29 +694,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Main/Claws/Stop
   guid: b4008a678015c347a97d7d7ffa0c4cda
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 250
---- !u!114 &-4581196299225310971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/ClawClose
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/ClawClose
-  guid: 356f640b28ed0840ace1392f29e87bae
   Banks:
   - {fileID: -8449037562324131658}
   IsStream: 0
@@ -838,23 +788,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-4406707042561844096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Concrete/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-4351349750705440790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,23 +805,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-3884598977127172958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  Min: 0
-  Max: 6
-  Default: 0
-  Exists: 1
 --- !u!114 &-3862778158289549425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,63 +850,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Concrete/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-3280326780171725536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  Min: 0
-  Max: 6
-  Default: 0
-  Exists: 0
---- !u!114 &-3207907717553675826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Bulldozer/Bulldozer
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Bulldozer/Bulldozer
-  guid: 3a9501485db84d49aa3ba172d3c5594a
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 4000
---- !u!114 &-2856227259232600261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Generic/Velocity
   m_EditorClassIdentifier: 
   Name: Velocity
   Min: 0
@@ -1054,6 +913,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 80
   Length: 250
+--- !u!114 &-2425957461781871116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/ClawOpen
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/ClawOpen
+  guid: c0ca21202c5ec14092228bee2d2f723e
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 250
+--- !u!114 &-2410420646586067357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/MotorStop
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/MotorStop
+  guid: b4008a678015c347a97d7d7ffa0c4cda
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 250
 --- !u!114 &-2259548414526580586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,57 +1010,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-1954029141620719049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1869298792260116634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1741301705865317453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wood/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &-1730546681370792032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,12 +1076,12 @@ MonoBehaviour:
   Path: event:/Main/Impacts/Generic
   guid: 0925ae4cfb0cd84da6baee2606550e10
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -439224144483114986}
+  - {fileID: -7897614716751661600}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -1248,40 +1102,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &-1491008211256460758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorExtend/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1471191005210808990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Metal/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-1385500724134274320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,23 +1153,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-947735503317068943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Concrete/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &-896587211749311236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,23 +1187,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-644157233150181061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wood/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-490349771137218534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,63 +1211,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 60
   Length: 0
---- !u!114 &-439224144483114986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Generic/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &-409362665329229486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
---- !u!114 &-382396385683284970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/ClawConnect
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/ClawConnect
-  guid: 17b4f38c20cf794faf945fb9dc6ae85e
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 1584
 --- !u!114 &-378143446674461117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,23 +1286,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-104139758198346085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Concrete/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-71462108089520893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,8 +1333,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3802292982241161500}
-  - {fileID: -8449037562324131658}
+  - {fileID: -6694960121753679315}
+  - {fileID: 1876480330138807779}
   EditorEvents:
   - {fileID: -9131605287128810566}
   - {fileID: -5096139117369404913}
@@ -1630,24 +1342,41 @@ MonoBehaviour:
   - {fileID: 5517283657161614558}
   - {fileID: 571942822375806686}
   - {fileID: 1699935649542519815}
-  - {fileID: -8759787745045572243}
-  - {fileID: -7855637872305980554}
-  - {fileID: -6311803023513999692}
-  - {fileID: 6985346975427315527}
-  - {fileID: -382396385683284970}
-  - {fileID: -4581196299225310971}
-  - {fileID: 1072284777805336251}
-  - {fileID: -3207907717553675826}
-  - {fileID: 6740035022921591936}
-  - {fileID: 147839304153529844}
-  - {fileID: 4367099430143255634}
+  - {fileID: 2779675434183985362}
+  - {fileID: 4692875719684129048}
+  - {fileID: 891974716700446963}
+  - {fileID: 2939886191178253815}
+  - {fileID: 9157892264060904849}
+  - {fileID: 6461573862191078043}
+  - {fileID: 6063373236255810237}
+  - {fileID: 4526378791314409707}
+  - {fileID: -2410420646586067357}
+  - {fileID: -2425957461781871116}
+  - {fileID: -5445909607905878139}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   StringsBanks:
-  - {fileID: 3802292982241161500}
-  stringsBankWriteTime: 637161978050000000
+  - {fileID: -6694960121753679315}
+  stringsBankWriteTime: 637161925327278758
   cacheVersion: 3
+--- !u!114 &14595108101255910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MotorMain/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &107237626330110670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,30 +1394,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &147839304153529844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Music/Gameplay/Gameplay
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Music/Gameplay/Gameplay
-  guid: 80fcc050d3e66548bb3985764d9e55aa
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 6291266838353446290}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7200
 --- !u!114 &184994672122310961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,7 +1435,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 60
   Length: 0
---- !u!114 &245076522769787556
+--- !u!114 &255688243759593915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1743,23 +1448,6 @@ MonoBehaviour:
   m_Name: parameter:/Gameplay/GameOver
   m_EditorClassIdentifier: 
   Name: GameOver
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &368821296800534809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorExtend/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
   Min: 0
   Max: 1
   Default: 0
@@ -1796,12 +1484,12 @@ MonoBehaviour:
   Path: event:/Main/Impacts/Wood
   guid: fb8147006cfbaf44bb100790d6817048
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -1741301705865317453}
+  - {fileID: -9078169565875074464}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -1877,6 +1565,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &891974716700446963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/ClawClose
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/ClawClose
+  guid: 356f640b28ed0840ace1392f29e87bae
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 250
 --- !u!114 &905487182129970356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,29 +1622,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &1072284777805336251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/ClawOpen
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/ClawOpen
-  guid: c0ca21202c5ec14092228bee2d2f723e
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 250
 --- !u!114 &1276796472515787748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,23 +1673,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &1648493317805499932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &1699935649542519815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2017,16 +1688,37 @@ MonoBehaviour:
   Path: event:/Main/Impacts/Block
   guid: 36f9699d17f49148a8e98a0740e07b33
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -409362665329229486}
-  - {fileID: -3884598977127172958}
+  - {fileID: -5052582187031330302}
+  - {fileID: -8810997874057822589}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
+--- !u!114 &1876480330138807779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Bryce/Desktop/Repos/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
+    Bank.bank
+  SubDir: 
+  lastModified: 637161925327548604
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1728128
+  Exists: 1
 --- !u!114 &1883453492968775071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2119,6 +1811,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2779675434183985362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/ClawConnect
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/ClawConnect
+  guid: 17b4f38c20cf794faf945fb9dc6ae85e
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 1584
 --- !u!114 &2800720115588877544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2153,7 +1868,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
---- !u!114 &2986867287219444667
+--- !u!114 &2939886191178253815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2162,14 +1877,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Concrete/Velocity
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Bulldozer/Bulldozer
   m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/Main/Bulldozer/Bulldozer
+  guid: 3a9501485db84d49aa3ba172d3c5594a
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 4000
 --- !u!114 &3059675794824755768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2211,23 +1932,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 60
   Length: 1898
---- !u!114 &3101808299561962585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorMain/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &3116937183362229991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,23 +2034,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &3631692090648678418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorMain/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &3802292982241161500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,11 +2049,11 @@ MonoBehaviour:
   Path: /Archives/Projects/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
     Bank.strings.bank
   SubDir: 
-  lastModified: 637161978050000000
+  lastModified: 637161672170000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1512
+    Value: 1134
   Exists: 1
 --- !u!114 &3926154837815822639
 MonoBehaviour:
@@ -2423,23 +2110,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 960
   Exists: 1
---- !u!114 &4093114793994374671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MotorMain/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &4161551280835660821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2457,7 +2127,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &4367099430143255634
+--- !u!114 &4281143434943102607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Metal/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &4526378791314409707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2467,19 +2154,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Atmos/Atmos
+  m_Name: event:/Main/Claws/MotorStart
   m_EditorClassIdentifier: 
-  Path: event:/Main/Atmos/Atmos
-  guid: f2f55534c0f77244a9c04e12a046224b
+  Path: event:/Main/Claws/MotorStart
+  guid: 83f5648417bf404b84599a7ecb5f1fac
   Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 22000
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 250
 --- !u!114 &4604375113932246982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,6 +2184,30 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4692875719684129048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/MotorMain
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/MotorMain
+  guid: 20ec3cc5743a754ea445e5ef3ead0ef0
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 14595108101255910}
+  MinDistance: 1
+  MaxDistance: 60
+  Length: 125
 --- !u!114 &4884540258295900207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2620,12 +2331,12 @@ MonoBehaviour:
   Path: event:/Main/Impacts/Metal
   guid: 5617ccdac195a04288258b1180c4bc6a
   Banks:
-  - {fileID: -8449037562324131658}
+  - {fileID: 1876480330138807779}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8834000887129349698}
+  - {fileID: 4281143434943102607}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -2644,23 +2355,6 @@ MonoBehaviour:
   Name: Surface
   Min: 0
   Max: 6
-  Default: 0
-  Exists: 0
---- !u!114 &5672298421632984658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wood/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &5828742580665732583
@@ -2697,6 +2391,30 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6063373236255810237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Music/Gameplay/Gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Music/Gameplay/Gameplay
+  guid: 80fcc050d3e66548bb3985764d9e55aa
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 255688243759593915}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7200
 --- !u!114 &6231614681416941397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,23 +2456,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 60
   Length: 0
---- !u!114 &6291266838353446290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Gameplay/GameOver
-  m_EditorClassIdentifier: 
-  Name: GameOver
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &6327798820141893623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,6 +2473,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &6461573862191078043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Bulldozer/ReversingBeep
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Bulldozer/ReversingBeep
+  guid: 73d2656a0eadd949b0c4c28a01c804e8
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 4000
 --- !u!114 &6506353212693083891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2806,29 +2530,6 @@ MonoBehaviour:
   Max: 6
   Default: 0
   Exists: 0
---- !u!114 &6740035022921591936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Bulldozer/ReversingBeep
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Bulldozer/ReversingBeep
-  guid: 73d2656a0eadd949b0c4c28a01c804e8
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 4000
 --- !u!114 &6939157796720734072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2846,29 +2547,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &6985346975427315527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main/Claws/MotorStop
-  m_EditorClassIdentifier: 
-  Path: event:/Main/Claws/MotorStop
-  guid: b4008a678015c347a97d7d7ffa0c4cda
-  Banks:
-  - {fileID: -8449037562324131658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 250
 --- !u!114 &7089761915626016103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2920,23 +2598,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &7332510630934212163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Metal/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &7399062617739930749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2969,23 +2630,6 @@ MonoBehaviour:
   Name: Velocity
   Min: 0
   Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &7573533268535708165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  Min: 0
-  Max: 6
   Default: 0
   Exists: 0
 --- !u!114 &7650161796041919201
@@ -3033,40 +2677,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Block/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8098650510431123648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Block/Surface
-  m_EditorClassIdentifier: 
-  Name: Surface
-  Min: 0
-  Max: 6
-  Default: 0
-  Exists: 0
---- !u!114 &8189698472158677782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Generic/Velocity
   m_EditorClassIdentifier: 
   Name: Velocity
   Min: 0
@@ -3243,23 +2853,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &8834000887129349698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Metal/Velocity
-  m_EditorClassIdentifier: 
-  Name: Velocity
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 1
 --- !u!114 &8841614753527180172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,6 +2887,30 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &9157892264060904849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main/Claws/MotorExtend
+  m_EditorClassIdentifier: 
+  Path: event:/Main/Claws/MotorExtend
+  guid: 67a69317c8c9ab4da4a4f6a18a0c5adb
+  Banks:
+  - {fileID: 1876480330138807779}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8950482894491106718}
+  MinDistance: 1
+  MaxDistance: 60
+  Length: 23
 --- !u!114 &9204214193900478241
 MonoBehaviour:
   m_ObjectHideFlags: 0

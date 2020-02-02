@@ -19,14 +19,23 @@ public class Debris : MonoBehaviour
         {
             if (GetComponent<Rigidbody>().velocity.magnitude > 0.1)
             {
-                ParticleSystem ps = Instantiate(smokePuff, transform);
-                ps.Play();
-                Destroy(ps.gameObject, ps.main.duration);
+                if (smokePuff)
+                {
+                    ParticleSystem ps = Instantiate(smokePuff, transform);
+                    ps.Play();
+                    Destroy(ps.gameObject, ps.main.duration);
+                }
             }
         }
 
-        float velocity = GetComponent<Rigidbody>().velocity.magnitude/30.0f;
-        emitter.SetParameter("Velocity", velocity);
-        emitter.Play();
+        float velocity = Mathf.Abs(GetComponent<Rigidbody>().velocity.magnitude) / 30.0f;
+        velocity = Mathf.SmoothStep(0, 1, velocity);
+
+        if(velocity > 0.05f)
+        {
+            emitter.SetParameter("Velocity", velocity);
+            emitter.Play();
+        }
+        
     }
 }
