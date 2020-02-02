@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GrabberLerpPos : MonoBehaviour
 {
-    float m_time = 3;
-    float m_distance = 10;
+    float m_time = 15;
+    float m_distance = 33;
     Vector3 m_startPos;
     Vector3 m_endPos;
     float t = 0;

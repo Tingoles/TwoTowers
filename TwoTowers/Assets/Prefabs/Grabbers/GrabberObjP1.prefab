@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222260417276228676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 0, z: 0}
+  m_LocalPosition: {x: 3.5, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4823780744133721765}
@@ -97,7 +97,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: f3271166eb4423c49b4598c8c1fa8f1a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -171,7 +171,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
@@ -294,7 +294,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780744741516161}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -425,7 +425,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780744919233081}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -556,7 +556,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780744952282414}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -574,7 +574,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.99999976, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -1.0000006, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -687,7 +687,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745311344432}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -705,7 +705,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -1.0000006, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.99999654, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -818,7 +818,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745387662190}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1093,7 +1093,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745408689313}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1111,7 +1111,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -1.0000013, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -1.0000045, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1224,7 +1224,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745519236511}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1242,7 +1242,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.99999774, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -1.0000033, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1279,9 +1279,11 @@ GameObject:
   - component: {fileID: 4823780745540781411}
   - component: {fileID: 4823780745540781408}
   - component: {fileID: 4823780745540781409}
+  - component: {fileID: 159475180}
+  - component: {fileID: 159475181}
   m_Layer: 0
   m_Name: Cylinder (15)
-  m_TagString: Untagged
+  m_TagString: Claw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1399,6 +1401,32 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!135 &159475180
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823780745540781414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: -5, z: 0}
+--- !u!114 &159475181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823780745540781414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb97fefede03284eb7279cd726fff3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparksFX: {fileID: 198152906723085702, guid: d5c9cb0ab4edfb949b50d345ee03af1e, type: 3}
 --- !u!1 &4823780745559772159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1516,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745559772159}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1619,7 +1647,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780745899219337}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1794,7 +1822,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780746009351600}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1812,7 +1840,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.9999989, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.99999577, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1925,7 +1953,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780746041587415}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1943,7 +1971,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.9999989, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.9999974, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2056,7 +2084,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780746178409172}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2074,7 +2102,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -1.0000006, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -1.0000037, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2187,7 +2215,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780746238569321}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2205,7 +2233,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.9999989, z: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.99999577, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2318,7 +2346,7 @@ Rigidbody:
   m_GameObject: {fileID: 4823780746249805682}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2384,7 +2412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5158509189412740989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -8.8, y: -26.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4823780744133721765}
@@ -2482,6 +2510,51 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f1d483e06f5f52743be432c3c1c59a19, type: 2}
+    - target: {fileID: 6443001093322440147, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145504232028990016, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275144291891626316, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253421474359603758, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522417018278385939, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 797227594810641094, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208401304846105593, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959678698270906226, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064495277238193033, guid: 202d32dc5660e07449dab3c09c37989d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Claw
+      objectReference: {fileID: 0}
     - target: {fileID: 6033428749624735844, guid: 202d32dc5660e07449dab3c09c37989d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
