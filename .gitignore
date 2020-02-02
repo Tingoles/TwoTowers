@@ -65,6 +65,8 @@ TwoTowers/Library/
 
 TwoTowers/Temp/
 
+TwoTowers/FMOD/TwoTowers/Assets/StreamingAssets/C/
+TwoTowers/FMOD/TwoTowers/Assets/StreamingAssets/C/.meta
 TwoTowers/FMOD/TwoTowers/.cache
 TwoTowers/FMOD/TwoTowers/.user
 TwoTowers/Logic/RawAssets
