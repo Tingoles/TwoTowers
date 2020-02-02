@@ -75,6 +75,12 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{5e65552c-e55f-425f-bc77-1a9824be16cb}">
+        <property name="volume">
+            <value>-12</value>
+        </property>
+        <relationship name="modulators">
+            <destination>{87d2a8f3-ac86-4cb8-9ad9-6dddd86a9674}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{bcbb73bf-f5b0-4ac4-8dae-df2353d58c02}</destination>
         </relationship>
@@ -109,7 +115,7 @@
         </property>
         <relationship name="modulators">
             <destination>{d338cc69-422d-4363-8903-7082ae1b1168}</destination>
-            <destination>{98d5c931-ea42-4e4f-9cbe-52fe13caac01}</destination>
+            <destination>{8a5aadff-7ca4-47fd-a564-888045750295}</destination>
         </relationship>
         <relationship name="audioFile">
             <destination>{4716969d-92de-4ac8-b3b7-9ef3eef12a30}</destination>
@@ -134,7 +140,7 @@
     </object>
     <object class="LoopRegion" id="{7344208f-f068-448a-8b76-35e57918b145}">
         <property name="position">
-            <value>0</value>
+            <value>2</value>
         </property>
         <property name="length">
             <value>2</value>
@@ -145,6 +151,20 @@
         <relationship name="markerTrack">
             <destination>{a0e0eb31-261f-4848-9850-f3872df0f481}</destination>
         </relationship>
+    </object>
+    <object class="ADSRModulator" id="{87d2a8f3-ac86-4cb8-9ad9-6dddd86a9674}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>380</value>
+        </property>
+        <property name="releaseTime">
+            <value>3000</value>
+        </property>
     </object>
     <object class="MixerBusEffectChain" id="{bcbb73bf-f5b0-4ac4-8dae-df2353d58c02}">
         <relationship name="effects">
@@ -159,7 +179,7 @@
             <value>pitch</value>
         </property>
         <property name="attackTime">
-            <value>520</value>
+            <value>620</value>
         </property>
         <property name="peakValue">
             <value>48.8888855</value>
@@ -171,24 +191,15 @@
             <value>48.8888855</value>
         </property>
         <property name="releaseTime">
-            <value>2400</value>
+            <value>3000</value>
         </property>
     </object>
-    <object class="ADSRModulator" id="{98d5c931-ea42-4e4f-9cbe-52fe13caac01}">
+    <object class="RandomizerModulator" id="{8a5aadff-7ca4-47fd-a564-888045750295}">
         <property name="nameOfPropertyBeingModulated">
-            <value>volume</value>
+            <value>startOffset</value>
         </property>
-        <property name="initialValue">
-            <value>-80</value>
-        </property>
-        <property name="attackTime">
-            <value>140</value>
-        </property>
-        <property name="holdTime">
-            <value>0</value>
-        </property>
-        <property name="releaseTime">
-            <value>814.102539</value>
+        <property name="amount">
+            <value>100</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{d7339f82-cc8c-4f66-b1ec-b72532b3b509}">

@@ -129,7 +129,7 @@ MonoBehaviour:
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
-  Preload: 0
+  Preload: 1
   Params:
   - Name: Velocity
     Value: 0
@@ -151,4 +151,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smokePuff: {fileID: 0}
-  m_materialType: 2

@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 3399862}
   - component: {fileID: 3399861}
   - component: {fileID: 3399860}
+  - component: {fileID: 3399864}
+  - component: {fileID: 3399865}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Untagged
@@ -229,6 +231,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3399858}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3399864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &3399865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &28026466
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +374,8 @@ GameObject:
   - component: {fileID: 56335230}
   - component: {fileID: 56335229}
   - component: {fileID: 56335228}
+  - component: {fileID: 56335232}
+  - component: {fileID: 56335233}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Untagged
@@ -430,6 +472,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56335226}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &56335232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56335226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &56335233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56335226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &99790013
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +523,8 @@ GameObject:
   - component: {fileID: 99790017}
   - component: {fileID: 99790016}
   - component: {fileID: 99790015}
+  - component: {fileID: 99790019}
+  - component: {fileID: 99790020}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -539,6 +621,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99790013}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &99790019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99790013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &99790020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99790013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &128237972
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +672,8 @@ GameObject:
   - component: {fileID: 128237976}
   - component: {fileID: 128237975}
   - component: {fileID: 128237974}
+  - component: {fileID: 128237978}
+  - component: {fileID: 128237979}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Untagged
@@ -648,6 +770,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128237972}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &128237978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128237972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &128237979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128237972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1001 &136152259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -793,6 +953,8 @@ GameObject:
   - component: {fileID: 228026487}
   - component: {fileID: 228026486}
   - component: {fileID: 228026485}
+  - component: {fileID: 228026489}
+  - component: {fileID: 228026490}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Untagged
@@ -889,6 +1051,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228026483}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &228026489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228026483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &228026490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228026483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
+--- !u!1 &234953870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8803110697978283271, guid: 1d869f4ee4a00034f9986542bb8176f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 136152259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &234953876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234953870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Bulldozer/Bulldozer
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 80
 --- !u!1 &271322196
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +1131,8 @@ GameObject:
   - component: {fileID: 271322200}
   - component: {fileID: 271322199}
   - component: {fileID: 271322198}
+  - component: {fileID: 271322202}
+  - component: {fileID: 271322203}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -998,6 +1229,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271322196}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &271322202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271322196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &271322203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271322196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &288189251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1280,8 @@ GameObject:
   - component: {fileID: 288189255}
   - component: {fileID: 288189254}
   - component: {fileID: 288189253}
+  - component: {fileID: 288189257}
+  - component: {fileID: 288189258}
   m_Layer: 0
   m_Name: Cube (34)
   m_TagString: Untagged
@@ -1107,6 +1378,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288189251}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &288189257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288189251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &288189258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288189251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &304603900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1429,8 @@ GameObject:
   - component: {fileID: 304603903}
   - component: {fileID: 304603902}
   - component: {fileID: 304603905}
+  - component: {fileID: 304603906}
+  - component: {fileID: 304603907}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1216,6 +1527,44 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &304603906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304603900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &304603907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304603900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &324561127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1658,8 @@ GameObject:
   - component: {fileID: 340493938}
   - component: {fileID: 340493937}
   - component: {fileID: 340493936}
+  - component: {fileID: 340493940}
+  - component: {fileID: 340493941}
   m_Layer: 0
   m_Name: Cube (35)
   m_TagString: Untagged
@@ -1405,6 +1756,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340493934}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &340493940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340493934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &340493941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340493934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &345646831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1807,8 @@ GameObject:
   - component: {fileID: 345646835}
   - component: {fileID: 345646834}
   - component: {fileID: 345646833}
+  - component: {fileID: 345646837}
+  - component: {fileID: 345646838}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -1514,6 +1905,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345646831}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &345646837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345646831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &345646838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345646831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &353471533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1956,8 @@ GameObject:
   - component: {fileID: 353471537}
   - component: {fileID: 353471536}
   - component: {fileID: 353471535}
+  - component: {fileID: 353471539}
+  - component: {fileID: 353471540}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1623,6 +2054,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353471533}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &353471539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353471533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &353471540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353471533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &361788543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +2105,8 @@ GameObject:
   - component: {fileID: 361788547}
   - component: {fileID: 361788546}
   - component: {fileID: 361788545}
+  - component: {fileID: 361788549}
+  - component: {fileID: 361788550}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -1732,6 +2203,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361788543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &361788549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361788543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &361788550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361788543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &419532024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +2254,8 @@ GameObject:
   - component: {fileID: 419532028}
   - component: {fileID: 419532027}
   - component: {fileID: 419532026}
+  - component: {fileID: 419532030}
+  - component: {fileID: 419532031}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Untagged
@@ -1841,6 +2352,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419532024}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &419532030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419532024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &419532031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419532024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &460396891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2603,8 @@ GameObject:
   - component: {fileID: 502985105}
   - component: {fileID: 502985104}
   - component: {fileID: 502985103}
+  - component: {fileID: 502985107}
+  - component: {fileID: 502985108}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Untagged
@@ -2150,6 +2701,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502985101}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &502985107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502985101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &502985108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502985101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &522953431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,6 +2752,8 @@ GameObject:
   - component: {fileID: 522953435}
   - component: {fileID: 522953434}
   - component: {fileID: 522953433}
+  - component: {fileID: 522953437}
+  - component: {fileID: 522953438}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -2259,6 +2850,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522953431}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &522953437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &522953438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &546818455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2901,8 @@ GameObject:
   - component: {fileID: 546818459}
   - component: {fileID: 546818458}
   - component: {fileID: 546818457}
+  - component: {fileID: 546818461}
+  - component: {fileID: 546818462}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -2368,6 +2999,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546818455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &546818461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546818455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &546818462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546818455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &556168793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +3050,8 @@ GameObject:
   - component: {fileID: 556168797}
   - component: {fileID: 556168796}
   - component: {fileID: 556168795}
+  - component: {fileID: 556168799}
+  - component: {fileID: 556168800}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -2477,6 +3148,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556168793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &556168799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556168793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &556168800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556168793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &565916267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +3230,7 @@ MonoBehaviour:
   - {fileID: 1881967998}
   bomb: {fileID: 2149324507291333804, guid: a255f34a3926466418a39c6ccd26c24b, type: 3}
   bulldozer: {fileID: 1861223934}
+  bulldozerEngine: {fileID: 234953876}
 --- !u!4 &565916269
 Transform:
   m_ObjectHideFlags: 0
@@ -2550,6 +3260,8 @@ GameObject:
   - component: {fileID: 570113968}
   - component: {fileID: 570113967}
   - component: {fileID: 570113966}
+  - component: {fileID: 570113970}
+  - component: {fileID: 570113971}
   m_Layer: 0
   m_Name: Cube (34)
   m_TagString: Untagged
@@ -2646,6 +3358,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570113964}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &570113970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570113964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &570113971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570113964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &582215870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,6 +3409,8 @@ GameObject:
   - component: {fileID: 582215874}
   - component: {fileID: 582215873}
   - component: {fileID: 582215872}
+  - component: {fileID: 582215876}
+  - component: {fileID: 582215877}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -2755,6 +3507,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582215870}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &582215876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582215870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &582215877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582215870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &623925572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +3558,8 @@ GameObject:
   - component: {fileID: 623925576}
   - component: {fileID: 623925575}
   - component: {fileID: 623925574}
+  - component: {fileID: 623925578}
+  - component: {fileID: 623925579}
   m_Layer: 0
   m_Name: Cube (31)
   m_TagString: Untagged
@@ -2864,6 +3656,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623925572}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &623925578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623925572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &623925579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623925572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &667840027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +3707,8 @@ GameObject:
   - component: {fileID: 667840031}
   - component: {fileID: 667840030}
   - component: {fileID: 667840029}
+  - component: {fileID: 667840033}
+  - component: {fileID: 667840034}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Untagged
@@ -2973,6 +3805,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667840027}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &667840033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667840027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &667840034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667840027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &669327896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +3856,8 @@ GameObject:
   - component: {fileID: 669327900}
   - component: {fileID: 669327899}
   - component: {fileID: 669327898}
+  - component: {fileID: 669327902}
+  - component: {fileID: 669327903}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -3082,6 +3954,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669327896}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &669327902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669327896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &669327903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669327896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &684110604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,6 +4096,8 @@ GameObject:
   - component: {fileID: 704375619}
   - component: {fileID: 704375618}
   - component: {fileID: 704375617}
+  - component: {fileID: 704375621}
+  - component: {fileID: 704375622}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -3282,6 +4194,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704375615}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &704375621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704375615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &704375622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704375615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &779286957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,6 +4245,8 @@ GameObject:
   - component: {fileID: 779286961}
   - component: {fileID: 779286960}
   - component: {fileID: 779286959}
+  - component: {fileID: 779286963}
+  - component: {fileID: 779286964}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -3391,6 +4343,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779286957}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &779286963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779286957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &779286964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779286957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &798653285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,6 +4394,8 @@ GameObject:
   - component: {fileID: 798653289}
   - component: {fileID: 798653288}
   - component: {fileID: 798653287}
+  - component: {fileID: 798653291}
+  - component: {fileID: 798653292}
   m_Layer: 0
   m_Name: Cube (30)
   m_TagString: Untagged
@@ -3500,6 +4492,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798653285}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &798653291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798653285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &798653292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798653285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &813531487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,6 +5017,8 @@ GameObject:
   - component: {fileID: 836157938}
   - component: {fileID: 836157937}
   - component: {fileID: 836157936}
+  - component: {fileID: 836157940}
+  - component: {fileID: 836157941}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -4083,6 +5115,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836157934}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &836157940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836157934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &836157941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836157934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &849381931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +5166,8 @@ GameObject:
   - component: {fileID: 849381935}
   - component: {fileID: 849381934}
   - component: {fileID: 849381933}
+  - component: {fileID: 849381937}
+  - component: {fileID: 849381938}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Untagged
@@ -4192,6 +5264,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849381931}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &849381937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849381931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &849381938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849381931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &905580248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,6 +5315,8 @@ GameObject:
   - component: {fileID: 905580252}
   - component: {fileID: 905580251}
   - component: {fileID: 905580250}
+  - component: {fileID: 905580254}
+  - component: {fileID: 905580255}
   m_Layer: 0
   m_Name: Cube (33)
   m_TagString: Untagged
@@ -4301,6 +5413,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905580248}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &905580254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905580248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &905580255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905580248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &913806970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,6 +5573,8 @@ GameObject:
   - component: {fileID: 916293916}
   - component: {fileID: 916293915}
   - component: {fileID: 916293914}
+  - component: {fileID: 916293918}
+  - component: {fileID: 916293919}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -4519,6 +5671,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916293912}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &916293918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916293912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &916293919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916293912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &920737100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,6 +5722,8 @@ GameObject:
   - component: {fileID: 920737104}
   - component: {fileID: 920737103}
   - component: {fileID: 920737102}
+  - component: {fileID: 920737106}
+  - component: {fileID: 920737107}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -4628,6 +5820,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920737100}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &920737106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920737100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &920737107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920737100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &962546589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,6 +5871,8 @@ GameObject:
   - component: {fileID: 962546593}
   - component: {fileID: 962546592}
   - component: {fileID: 962546591}
+  - component: {fileID: 962546595}
+  - component: {fileID: 962546596}
   m_Layer: 0
   m_Name: Cube (32)
   m_TagString: Untagged
@@ -4737,6 +5969,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962546589}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &962546595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962546589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &962546596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962546589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1002870202
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,6 +6020,8 @@ GameObject:
   - component: {fileID: 1002870206}
   - component: {fileID: 1002870205}
   - component: {fileID: 1002870204}
+  - component: {fileID: 1002870208}
+  - component: {fileID: 1002870209}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -4846,6 +6118,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002870202}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1002870208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002870202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1002870209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002870202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1027004765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5096,6 +6406,8 @@ GameObject:
   - component: {fileID: 1064111991}
   - component: {fileID: 1064111990}
   - component: {fileID: 1064111989}
+  - component: {fileID: 1064111993}
+  - component: {fileID: 1064111994}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -5192,6 +6504,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064111987}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1064111993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064111987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1064111994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064111987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1150364342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,6 +6555,8 @@ GameObject:
   - component: {fileID: 1150364346}
   - component: {fileID: 1150364345}
   - component: {fileID: 1150364344}
+  - component: {fileID: 1150364348}
+  - component: {fileID: 1150364349}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Untagged
@@ -5301,6 +6653,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150364342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1150364348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150364342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1150364349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150364342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1172667148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,6 +6704,8 @@ GameObject:
   - component: {fileID: 1172667152}
   - component: {fileID: 1172667151}
   - component: {fileID: 1172667150}
+  - component: {fileID: 1172667154}
+  - component: {fileID: 1172667155}
   m_Layer: 0
   m_Name: Cube (33)
   m_TagString: Untagged
@@ -5410,6 +6802,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172667148}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1172667154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172667148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1172667155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172667148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1186686812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,6 +6853,8 @@ GameObject:
   - component: {fileID: 1186686816}
   - component: {fileID: 1186686815}
   - component: {fileID: 1186686814}
+  - component: {fileID: 1186686818}
+  - component: {fileID: 1186686819}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Untagged
@@ -5519,6 +6951,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186686812}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1186686818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186686812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1186686819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186686812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1194423207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5532,6 +7002,8 @@ GameObject:
   - component: {fileID: 1194423211}
   - component: {fileID: 1194423210}
   - component: {fileID: 1194423209}
+  - component: {fileID: 1194423213}
+  - component: {fileID: 1194423214}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -5628,6 +7100,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194423207}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1194423213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194423207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1194423214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194423207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1210861109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5641,6 +7151,8 @@ GameObject:
   - component: {fileID: 1210861113}
   - component: {fileID: 1210861112}
   - component: {fileID: 1210861111}
+  - component: {fileID: 1210861115}
+  - component: {fileID: 1210861116}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Untagged
@@ -5737,6 +7249,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210861109}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1210861115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210861109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1210861116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210861109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1215093997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,6 +7300,8 @@ GameObject:
   - component: {fileID: 1215094001}
   - component: {fileID: 1215094000}
   - component: {fileID: 1215093999}
+  - component: {fileID: 1215094003}
+  - component: {fileID: 1215094004}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -5846,6 +7398,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215093997}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1215094003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215093997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1215094004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215093997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1256408251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6443,6 +8033,8 @@ GameObject:
   - component: {fileID: 1311474844}
   - component: {fileID: 1311474843}
   - component: {fileID: 1311474842}
+  - component: {fileID: 1311474846}
+  - component: {fileID: 1311474847}
   m_Layer: 0
   m_Name: Cube (30)
   m_TagString: Untagged
@@ -6539,6 +8131,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311474840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1311474846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311474840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1311474847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311474840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1315311385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6552,6 +8182,8 @@ GameObject:
   - component: {fileID: 1315311389}
   - component: {fileID: 1315311388}
   - component: {fileID: 1315311387}
+  - component: {fileID: 1315311391}
+  - component: {fileID: 1315311392}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -6648,6 +8280,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315311385}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1315311391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315311385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1315311392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315311385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1326140707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,6 +8331,8 @@ GameObject:
   - component: {fileID: 1326140711}
   - component: {fileID: 1326140710}
   - component: {fileID: 1326140709}
+  - component: {fileID: 1326140713}
+  - component: {fileID: 1326140714}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -6757,6 +8429,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326140707}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1326140713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326140707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1326140714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326140707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1336454148
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,6 +8480,8 @@ GameObject:
   - component: {fileID: 1336454152}
   - component: {fileID: 1336454151}
   - component: {fileID: 1336454150}
+  - component: {fileID: 1336454154}
+  - component: {fileID: 1336454155}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -6866,6 +8578,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336454148}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1336454154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336454148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1336454155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336454148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1383193612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6879,6 +8629,8 @@ GameObject:
   - component: {fileID: 1383193616}
   - component: {fileID: 1383193615}
   - component: {fileID: 1383193614}
+  - component: {fileID: 1383193618}
+  - component: {fileID: 1383193619}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Untagged
@@ -6975,6 +8727,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383193612}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1383193618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383193612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1383193619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383193612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1397856408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6988,6 +8778,8 @@ GameObject:
   - component: {fileID: 1397856412}
   - component: {fileID: 1397856411}
   - component: {fileID: 1397856410}
+  - component: {fileID: 1397856414}
+  - component: {fileID: 1397856415}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7084,6 +8876,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397856408}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1397856414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397856408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1397856415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397856408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1398749403
 GameObject:
   m_ObjectHideFlags: 0
@@ -7097,6 +8927,8 @@ GameObject:
   - component: {fileID: 1398749407}
   - component: {fileID: 1398749406}
   - component: {fileID: 1398749405}
+  - component: {fileID: 1398749409}
+  - component: {fileID: 1398749410}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Untagged
@@ -7193,6 +9025,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398749403}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1398749409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398749403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1398749410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398749403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1400847089
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,6 +9076,8 @@ GameObject:
   - component: {fileID: 1400847093}
   - component: {fileID: 1400847092}
   - component: {fileID: 1400847091}
+  - component: {fileID: 1400847095}
+  - component: {fileID: 1400847096}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -7302,6 +9174,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400847089}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1400847095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400847089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1400847096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400847089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1429560990
 GameObject:
   m_ObjectHideFlags: 0
@@ -7381,6 +9291,8 @@ GameObject:
   - component: {fileID: 1460465461}
   - component: {fileID: 1460465460}
   - component: {fileID: 1460465459}
+  - component: {fileID: 1460465463}
+  - component: {fileID: 1460465464}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7477,6 +9389,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460465457}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1460465463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460465457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1460465464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460465457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1460909015
 GameObject:
   m_ObjectHideFlags: 0
@@ -7490,6 +9440,8 @@ GameObject:
   - component: {fileID: 1460909019}
   - component: {fileID: 1460909018}
   - component: {fileID: 1460909017}
+  - component: {fileID: 1460909021}
+  - component: {fileID: 1460909022}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Untagged
@@ -7586,6 +9538,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460909015}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1460909021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460909015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1460909022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460909015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1480961657
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,6 +9589,8 @@ GameObject:
   - component: {fileID: 1480961661}
   - component: {fileID: 1480961660}
   - component: {fileID: 1480961659}
+  - component: {fileID: 1480961663}
+  - component: {fileID: 1480961664}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Untagged
@@ -7695,6 +9687,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480961657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1480961663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480961657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1480961664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480961657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1532101660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,6 +9827,8 @@ GameObject:
   - component: {fileID: 1535464452}
   - component: {fileID: 1535464451}
   - component: {fileID: 1535464450}
+  - component: {fileID: 1535464454}
+  - component: {fileID: 1535464455}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -7893,6 +9925,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535464448}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1535464454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535464448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1535464455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535464448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1539387816
 GameObject:
   m_ObjectHideFlags: 0
@@ -7906,6 +9976,8 @@ GameObject:
   - component: {fileID: 1539387820}
   - component: {fileID: 1539387819}
   - component: {fileID: 1539387818}
+  - component: {fileID: 1539387822}
+  - component: {fileID: 1539387823}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -8002,6 +10074,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539387816}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1539387822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539387816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1539387823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539387816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1540279364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8015,6 +10125,8 @@ GameObject:
   - component: {fileID: 1540279368}
   - component: {fileID: 1540279367}
   - component: {fileID: 1540279366}
+  - component: {fileID: 1540279370}
+  - component: {fileID: 1540279371}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Untagged
@@ -8111,6 +10223,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540279364}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1540279370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540279364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1540279371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540279364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1549151657
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +10274,8 @@ GameObject:
   - component: {fileID: 1549151661}
   - component: {fileID: 1549151660}
   - component: {fileID: 1549151659}
+  - component: {fileID: 1549151663}
+  - component: {fileID: 1549151664}
   m_Layer: 0
   m_Name: Cube (31)
   m_TagString: Untagged
@@ -8220,6 +10372,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549151657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1549151663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549151657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1549151664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549151657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1553632676
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,6 +10569,8 @@ GameObject:
   - component: {fileID: 1604194210}
   - component: {fileID: 1604194209}
   - component: {fileID: 1604194208}
+  - component: {fileID: 1604194212}
+  - component: {fileID: 1604194213}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -8475,6 +10667,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604194206}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1604194212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604194206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1604194213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604194206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1608894602
 GameObject:
   m_ObjectHideFlags: 0
@@ -8487,6 +10717,8 @@ GameObject:
   - component: {fileID: 1608894604}
   - component: {fileID: 1608894603}
   - component: {fileID: 1608894606}
+  - component: {fileID: 1608894607}
+  - component: {fileID: 1608894608}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8571,6 +10803,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9010d95adb06ad648a89a420e366b90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1608894607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608894602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
+--- !u!114 &1608894608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608894602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Music/Title/Title
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1627048581
 GameObject:
   m_ObjectHideFlags: 0
@@ -8650,6 +10918,8 @@ GameObject:
   - component: {fileID: 1631145909}
   - component: {fileID: 1631145908}
   - component: {fileID: 1631145907}
+  - component: {fileID: 1631145911}
+  - component: {fileID: 1631145912}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -8746,6 +11016,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631145905}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1631145911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631145905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1631145912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631145905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1631883555
 GameObject:
   m_ObjectHideFlags: 0
@@ -8759,6 +11067,8 @@ GameObject:
   - component: {fileID: 1631883559}
   - component: {fileID: 1631883558}
   - component: {fileID: 1631883557}
+  - component: {fileID: 1631883561}
+  - component: {fileID: 1631883562}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Untagged
@@ -8855,6 +11165,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631883555}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1631883561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631883555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1631883562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631883555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1658301767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8868,6 +11216,8 @@ GameObject:
   - component: {fileID: 1658301771}
   - component: {fileID: 1658301770}
   - component: {fileID: 1658301769}
+  - component: {fileID: 1658301773}
+  - component: {fileID: 1658301774}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Untagged
@@ -8964,6 +11314,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658301767}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1658301773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658301767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1658301774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658301767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1663930614
 GameObject:
   m_ObjectHideFlags: 0
@@ -8977,6 +11365,8 @@ GameObject:
   - component: {fileID: 1663930618}
   - component: {fileID: 1663930617}
   - component: {fileID: 1663930616}
+  - component: {fileID: 1663930620}
+  - component: {fileID: 1663930621}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Untagged
@@ -9073,6 +11463,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663930614}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1663930620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663930614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1663930621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663930614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1689859495
 GameObject:
   m_ObjectHideFlags: 0
@@ -9086,6 +11514,8 @@ GameObject:
   - component: {fileID: 1689859499}
   - component: {fileID: 1689859498}
   - component: {fileID: 1689859497}
+  - component: {fileID: 1689859501}
+  - component: {fileID: 1689859502}
   m_Layer: 0
   m_Name: Cube (35)
   m_TagString: Untagged
@@ -9182,6 +11612,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689859495}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1689859501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689859495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1689859502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689859495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1696271054
 GameObject:
   m_ObjectHideFlags: 0
@@ -9547,6 +12015,8 @@ GameObject:
   - component: {fileID: 1745123187}
   - component: {fileID: 1745123186}
   - component: {fileID: 1745123185}
+  - component: {fileID: 1745123189}
+  - component: {fileID: 1745123190}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -9643,6 +12113,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745123183}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1745123189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745123183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1745123190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745123183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1748578115
 GameObject:
   m_ObjectHideFlags: 0
@@ -14409,6 +16917,8 @@ GameObject:
   - component: {fileID: 1773509415}
   - component: {fileID: 1773509414}
   - component: {fileID: 1773509413}
+  - component: {fileID: 1773509417}
+  - component: {fileID: 1773509418}
   m_Layer: 0
   m_Name: Cube (32)
   m_TagString: Untagged
@@ -14505,6 +17015,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773509411}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1773509417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773509411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1773509418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773509411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1808504480
 GameObject:
   m_ObjectHideFlags: 0
@@ -14518,6 +17066,8 @@ GameObject:
   - component: {fileID: 1808504484}
   - component: {fileID: 1808504483}
   - component: {fileID: 1808504482}
+  - component: {fileID: 1808504486}
+  - component: {fileID: 1808504487}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -14614,6 +17164,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808504480}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1808504486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808504480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1808504487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808504480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1833428484
 GameObject:
   m_ObjectHideFlags: 0
@@ -14627,6 +17215,8 @@ GameObject:
   - component: {fileID: 1833428488}
   - component: {fileID: 1833428487}
   - component: {fileID: 1833428486}
+  - component: {fileID: 1833428490}
+  - component: {fileID: 1833428491}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -14723,6 +17313,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833428484}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1833428490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833428484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1833428491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833428484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1861223934
 GameObject:
   m_ObjectHideFlags: 0
@@ -15021,6 +17649,8 @@ GameObject:
   - component: {fileID: 1889620324}
   - component: {fileID: 1889620323}
   - component: {fileID: 1889620322}
+  - component: {fileID: 1889620326}
+  - component: {fileID: 1889620327}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -15117,6 +17747,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889620320}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1889620326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889620320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1889620327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889620320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1916443198
 GameObject:
   m_ObjectHideFlags: 0
@@ -15130,6 +17798,8 @@ GameObject:
   - component: {fileID: 1916443202}
   - component: {fileID: 1916443201}
   - component: {fileID: 1916443200}
+  - component: {fileID: 1916443204}
+  - component: {fileID: 1916443205}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Untagged
@@ -15226,6 +17896,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916443198}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1916443204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916443198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1916443205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916443198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1944271417
 GameObject:
   m_ObjectHideFlags: 0
@@ -15476,6 +18184,8 @@ GameObject:
   - component: {fileID: 1965078088}
   - component: {fileID: 1965078087}
   - component: {fileID: 1965078086}
+  - component: {fileID: 1965078090}
+  - component: {fileID: 1965078091}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -15572,6 +18282,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965078084}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1965078090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965078084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &1965078091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965078084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &1980946592
 GameObject:
   m_ObjectHideFlags: 0
@@ -15866,6 +18614,8 @@ GameObject:
   - component: {fileID: 2017296057}
   - component: {fileID: 2017296056}
   - component: {fileID: 2017296055}
+  - component: {fileID: 2017296059}
+  - component: {fileID: 2017296060}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Untagged
@@ -15962,6 +18712,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017296053}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2017296059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017296053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &2017296060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017296053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &2028015107
 GameObject:
   m_ObjectHideFlags: 0
@@ -15975,6 +18763,8 @@ GameObject:
   - component: {fileID: 2028015111}
   - component: {fileID: 2028015110}
   - component: {fileID: 2028015109}
+  - component: {fileID: 2028015113}
+  - component: {fileID: 2028015114}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -16071,6 +18861,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028015107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2028015113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028015107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &2028015114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028015107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &2051178866
 GameObject:
   m_ObjectHideFlags: 0
@@ -16213,6 +19041,8 @@ GameObject:
   - component: {fileID: 2080032116}
   - component: {fileID: 2080032115}
   - component: {fileID: 2080032114}
+  - component: {fileID: 2080032118}
+  - component: {fileID: 2080032119}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -16309,6 +19139,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080032112}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2080032118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080032112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &2080032119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080032112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!1 &2085533313
 GameObject:
   m_ObjectHideFlags: 0
@@ -16322,6 +19190,8 @@ GameObject:
   - component: {fileID: 2085533317}
   - component: {fileID: 2085533316}
   - component: {fileID: 2085533315}
+  - component: {fileID: 2085533319}
+  - component: {fileID: 2085533320}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Untagged
@@ -16418,6 +19288,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085533313}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2085533319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085533313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &2085533320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085533313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
 --- !u!4 &2114263047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5508385378190046996, guid: 1d869f4ee4a00034f9986542bb8176f0,
@@ -16437,6 +19345,8 @@ GameObject:
   - component: {fileID: 2141410621}
   - component: {fileID: 2141410620}
   - component: {fileID: 2141410619}
+  - component: {fileID: 2141410623}
+  - component: {fileID: 2141410624}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -16533,3 +19443,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141410617}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2141410623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141410617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Main/Impacts/Block
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params:
+  - Name: Surface
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 60
+--- !u!114 &2141410624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141410617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}

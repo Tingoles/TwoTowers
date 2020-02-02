@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour
     public List<Rigidbody> rb;
     public GameObject bomb;
     public GameObject bulldozer;
+    public FMODUnity.StudioEventEmitter bulldozerEngine;
 
     private int buttonHovered = 0;
     private bool doOnceLeft = true;
@@ -98,7 +99,8 @@ public class Menu : MonoBehaviour
 
     IEnumerator StartTruck()
     {
-        foreach(Rigidbody r in rb)
+        bulldozerEngine.Play();
+        foreach (Rigidbody r in rb)
         {
             r.useGravity = true;
             r.GetComponent<BoxCollider>().isTrigger = false;
@@ -107,6 +109,5 @@ public class Menu : MonoBehaviour
         bulldozer.GetComponent<LerpTowards>().start = true;
         yield return new WaitForSeconds(1.5f);
         FindObjectOfType<Transition>().LoadScene("BryceScene");
-
     }
 }
