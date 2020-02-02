@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9188896422671078742}
   - component: {fileID: 4271165751610909089}
   - component: {fileID: 1108567071072917732}
-  - component: {fileID: 8176545647286573798}
+  - component: {fileID: -1142142057173240005}
   m_Layer: 8
   m_Name: RepairDebris
   m_TagString: Untagged
@@ -151,8 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3de1dd3b49226488882453b99170c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smokePuff: {fileID: 0}
---- !u!114 &8176545647286573798
+  smokePuff: {fileID: 4809255945881458438, guid: caa3b1ab1d775314c88eba2a943aa545,
+    type: 3}
+--- !u!114 &-1142142057173240005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +162,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9188896422671078729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecf4ff3751c30c4d87f5e745ee3d7c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 216424c43d8f32b44829e3ac995a870d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 2149324507291333804, guid: a255f34a3926466418a39c6ccd26c24b, type: 3}
+  combineFX: {fileID: 5853148720663757324, guid: 07d79676d057a8e418a1d22ad4066370,
+    type: 3}

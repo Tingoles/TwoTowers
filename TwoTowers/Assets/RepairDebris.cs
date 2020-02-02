@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class RepairDebris : MonoBehaviour
 {
-    public GameObject bomb;
-
     BlockManager blockManager;
 
-    Vector3 bombPlacement;
+    public ParticleSystem combineFX;
 
     private void Start()
     {
@@ -29,6 +27,13 @@ public class RepairDebris : MonoBehaviour
             {
                 blockManager.rightBulldozer.GetComponent<Bulldozer>().CreateCubes(2);
             }
+
+            //fx
+            ParticleSystem ps = Instantiate(combineFX);
+            ps.transform.position = transform.position;
+            ps.Play();
+            Destroy(ps.gameObject, ps.main.duration);
+            //
 
             Destroy(gameObject);
         }
