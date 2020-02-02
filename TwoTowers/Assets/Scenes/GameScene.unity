@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main/Claws/MainMotor
+  Event: event:/Main/Claws/MotorMain
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main/Claws/Stop
+  Event: event:/Main/Claws/MotorStop
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 80
 --- !u!114 &385828280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main/Claws/Start
+  Event: event:/Main/Claws/MotorStart
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
@@ -194,7 +194,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 80
 --- !u!114 &385828281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Main/Claws/ExtensionMotor
+  Event: event:/Main/Claws/MotorExtend
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
