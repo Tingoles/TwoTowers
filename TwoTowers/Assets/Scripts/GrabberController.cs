@@ -127,15 +127,16 @@ public class GrabberController : MonoBehaviour
         }
     }
 
-    void Drop()
+    public void Drop()
     {
         m_grabbed = false;
         if (m_grabbedObj)
         {
             Destroy(m_grabbedObj.GetComponent<FixedJoint>());
             m_grabbedObj.GetComponent<Collider>().enabled = true;
-
         }
+        m_grabAnim.SetBool("Grabbed", m_grabbed);
+
     }
 
     void OnDrawGizmos()
