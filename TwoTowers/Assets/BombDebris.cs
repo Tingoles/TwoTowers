@@ -10,6 +10,8 @@ public class BombDebris : MonoBehaviour
 
     Vector3 bombPlacement;
 
+    public ParticleSystem combineFX;
+
     private void Start()
     {
         blockManager = GameObject.FindGameObjectWithTag("BlockManager").GetComponent<BlockManager>();
@@ -21,9 +23,16 @@ public class BombDebris : MonoBehaviour
         {
             blockManager.activeBlocks.Remove(collision.gameObject);
             bombPlacement = collision.gameObject.transform.position;
-            Destroy(collision.gameObject);
             GameObject temp = Instantiate(bomb);
             temp.transform.position = bombPlacement;
+
+            //fx
+            ParticleSystem ps = Instantiate(combineFX);
+            ps.transform.position = transform.position;
+            ps.Play();
+            Destroy(ps.gameObject, ps.main.duration);
+            //
+            
             Destroy(gameObject);
         }
     }
