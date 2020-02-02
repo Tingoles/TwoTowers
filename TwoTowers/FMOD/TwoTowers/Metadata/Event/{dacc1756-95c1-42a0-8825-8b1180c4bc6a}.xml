@@ -177,6 +177,9 @@
         <property name="length">
             <value>0.29999999999999999</value>
         </property>
+        <property name="volume">
+            <value>-14.5</value>
+        </property>
         <property name="pitch">
             <value>-8</value>
         </property>
@@ -211,6 +214,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{c937ec90-061a-45bd-9dc4-402adf593f6b}">
+        <property name="volume">
+            <value>-14</value>
+        </property>
         <property name="name">
             <value>Clatter</value>
         </property>
@@ -396,7 +402,7 @@
             <value>0</value>
         </property>
         <property name="value">
-            <value>-18</value>
+            <value>-25</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{fc5a44d8-fe27-4341-a155-02dd1f734caf}">
@@ -404,7 +410,7 @@
             <value>1</value>
         </property>
         <property name="value">
-            <value>-6</value>
+            <value>1.92000008</value>
         </property>
     </object>
 </objects>
