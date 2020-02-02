@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GrabberController : MonoBehaviour
 {
+    public float m_moving = 0;
     public bool m_active = false;
     public float m_speed = 2f;
     public Transform m_grabberPos;
@@ -15,6 +16,16 @@ public class GrabberController : MonoBehaviour
     public Transform m_minPos;
     public Transform m_maxPos;
 
+    public float m_movingTransitionSpeed = 1.0f;
+    public Vector2 m_chainAngularDrag;
+    public Vector2 m_chainDrag;
+    public Vector2 m_chainMass;
+    public Vector2 m_grabberAngularDrag;
+    public Vector2 m_grabberDrag;
+    public Vector2 m_grabberMass;
+
+    public List<Rigidbody> m_chainRigids = new List<Rigidbody>();
+    public List<Rigidbody> m_grabberRigids = new List<Rigidbody>();
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +39,21 @@ public class GrabberController : MonoBehaviour
         if (!m_active) return;
         Movement();
         m_grabAnim.SetBool("Grabbed", m_grabbed);
+
+
+
+        foreach (Rigidbody r in m_chainRigids)
+        {
+            r.angularDrag = Mathf.Lerp(m_chainAngularDrag.x, m_chainAngularDrag.y, m_moving);
+            r.drag = Mathf.Lerp(m_chainDrag.x, m_chainDrag.y, m_moving);
+            r.mass = Mathf.Lerp(m_chainMass.x, m_chainMass.y, m_moving);
+        }
+        foreach (Rigidbody r in m_grabberRigids)
+        {
+            r.angularDrag = Mathf.Lerp(m_grabberAngularDrag.x, m_grabberAngularDrag.y, m_moving);
+            r.drag = Mathf.Lerp(m_grabberDrag.x, m_grabberDrag.y, m_moving);
+            r.mass = Mathf.Lerp(m_grabberMass.x, m_grabberMass.y, m_moving);
+        }
     }
 
     void Movement()
@@ -43,7 +69,9 @@ public class GrabberController : MonoBehaviour
                 Drop();
             }
         }
+        Vector3 pre = transform.position;
         transform.position += m_input.m_inputVec * m_speed * Time.deltaTime;
+        m_moving = Mathf.MoveTowards(m_moving, Mathf.Abs(pre.x - transform.position.x) > 0 ? 1 : 0, Time.deltaTime * m_movingTransitionSpeed);
         Restrict();
     }
 
