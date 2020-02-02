@@ -187,30 +187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5508385378190046996, guid: 1d869f4ee4a00034f9986542bb8176f0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5508385378190046996, guid: 1d869f4ee4a00034f9986542bb8176f0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5508385378190046996, guid: 1d869f4ee4a00034f9986542bb8176f0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 25562684, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
-    - target: {fileID: 25562684, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
-      propertyPath: debris.Array.data[3]
-      value: 
-      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
 --- !u!1 &394530964
@@ -717,7 +697,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4823780745980489859, guid: 831e9f56d2908814a9009c2be5a315c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.799999
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4823780745980489858, guid: 831e9f56d2908814a9009c2be5a315c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 831e9f56d2908814a9009c2be5a315c8, type: 3}
 --- !u!1 &938065455
 GameObject:
@@ -1006,36 +992,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1131989699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1131989700}
-  m_Layer: 0
-  m_Name: Shovel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1131989700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131989699}
-  m_LocalRotation: {x: 0, y: 0, z: 0.3496351, w: 0.93688595}
-  m_LocalPosition: {x: 0, y: 1.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1705780278}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40.93}
 --- !u!1 &1189106028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1281,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4823780745980489859, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4823780745980489858, guid: 36e8e898485a8fe4b906237f553a5609, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36e8e898485a8fe4b906237f553a5609, type: 3}
 --- !u!1 &1389723992
 GameObject:
@@ -6770,12 +6732,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 352695130}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1705780278 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5508385378190046996, guid: 1d869f4ee4a00034f9986542bb8176f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 352695130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1713081855 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7400710050099398892, guid: 7ac50566b2912294e880f90101922d2d,
@@ -6888,7 +6844,7 @@ Transform:
   m_GameObject: {fileID: 1870962658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 19.5, z: 0}
-  m_LocalScale: {x: 52, y: 45, z: 10}
+  m_LocalScale: {x: 41.352745, y: 45, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
