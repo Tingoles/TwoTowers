@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject bomb;
 
+    public GameClock gameClock;
+    public BlockManager blockManager;
+
     public float timeTillBomb;
 
     private void Start()
@@ -22,7 +25,7 @@ public class GameManager : MonoBehaviour
         if(timeTillBomb < 0)
         {
             GameObject obj = Instantiate(bomb);
-            obj.transform.position = new Vector3(Random.Range(-8.0f, 8.0f), 12.0f);
+            obj.transform.position = new Vector3(Random.Range(-8.0f, 8.0f), 36.0f);
             obj.GetComponent<BombScript>().fuseTimer = 12.0f;
             timeTillBomb = Random.Range(20.0f, 30.0f);
         }
@@ -37,6 +40,8 @@ public class GameManager : MonoBehaviour
 
             bully.GetComponent<Bulldozer>().CreateCubes();
         }
+        gameClock.countdown = true;
+        blockManager.calcHeights = true;
     }
 
 }

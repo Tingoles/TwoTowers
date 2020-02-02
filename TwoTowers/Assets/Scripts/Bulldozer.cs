@@ -41,7 +41,7 @@ public class Bulldozer : MonoBehaviour
     [SerializeField]
     private ParticleSystem driveFX;
 
-    private float blockSpawnDelay = 10;
+    private float blockSpawnDelay = 30;
     private float blockSpawnTimer = 0;
 
     private Animator animator;
@@ -71,7 +71,8 @@ public class Bulldozer : MonoBehaviour
         {
             StartCoroutine(SpawnDebris(numBlocksToSpawn));
             StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
-            blockSpawnTimer = 0; 
+            blockSpawnTimer = 0;
+            blockSpawnDelay = 10;
         }
         blockSpawnTimer += Time.deltaTime;
 
@@ -95,7 +96,7 @@ public class Bulldozer : MonoBehaviour
         animator.SetFloat("Speed", 1.0f);
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
-            float tl = (t / forwardTime)*0.2f;
+            float tl = (t / forwardTime);
             transform.position = Vector3.MoveTowards(transform.position, targetPos, tl);
             yield return null;
         }
@@ -110,7 +111,7 @@ public class Bulldozer : MonoBehaviour
         for (float t = 0; t < reverseTime; t += Time.deltaTime)
         {
             float tl = t / reverseTime;
-            transform.position = Vector3.Lerp(targetPos, startPos, tl);
+            transform.position = Vector3.MoveTowards(transform.position, startPos, tl);
             yield return null;
         }
         animator.SetFloat("Speed", 0.0f);
