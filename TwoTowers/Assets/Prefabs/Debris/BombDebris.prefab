@@ -165,3 +165,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomb: {fileID: 2149324507291333804, guid: a255f34a3926466418a39c6ccd26c24b, type: 3}
+  combineFX: {fileID: 5853148720663757324, guid: 07d79676d057a8e418a1d22ad4066370,
+    type: 3}
