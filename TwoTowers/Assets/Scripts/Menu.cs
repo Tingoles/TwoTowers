@@ -76,13 +76,13 @@ public class Menu : MonoBehaviour
             buttonHovered = 0;
         }
 
-        if (Input.GetButtonDown("Grab1"))
+        if (Input.GetButtonDown("Grab1") || Input.GetButtonDown("Grab2"))
         {
             buttonPushed = true;
             if(buttonHovered == 1)
             {
                 StartCoroutine(QuitGame());
-            }
+            } 
             else
             {
                 StartCoroutine(StartTruck());
