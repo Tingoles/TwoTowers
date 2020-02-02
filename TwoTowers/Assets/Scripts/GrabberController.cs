@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class GrabberController : MonoBehaviour
 {
@@ -15,21 +17,48 @@ public class GrabberController : MonoBehaviour
     public Transform m_minPos;
     public Transform m_maxPos;
 
-
-    private FMODUnity.StudioEventEmitter startMotor;
-    private FMODUnity.StudioEventEmitter motor;
-    private FMODUnity.StudioEventEmitter stopMotor;
-    private FMODUnity.StudioEventEmitter extensionMotor;
+    [EventRef]
+    public string m_motorRef;
+    private EventInstance m_motorInstance;
+    private PARAMETER_ID m_motorVelocityID;
+    [EventRef]
+    public string m_motorStartRef;
+    private EventInstance m_motorStartInstance;
+    [EventRef]
+    public string m_motorEndRef;
+    private EventInstance m_motorEndInstance;
+    [EventRef]
+    public string m_extentionRef;
+    private EventInstance m_extentionInstance;
+    private PARAMETER_ID m_extentionVelocityID;
 
     // Start is called before the first frame update
     void Start()
     {
-        motor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[0];
-        stopMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[1];
-        startMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[2];
-        extensionMotor = GetComponentsInParent<FMODUnity.StudioEventEmitter>()[3];
+        m_motorInstance = RuntimeManager.CreateInstance(m_motorRef);
+
+        {
+            EventDescription motorVelEventDesc = RuntimeManager.GetEventDescription(m_motorRef);
+            PARAMETER_DESCRIPTION motorParameterDescription;
+            motorVelEventDesc.getParameterDescriptionByName("Velocity", out motorParameterDescription);
+            m_motorVelocityID = motorParameterDescription.id;
+        }
+
+        m_extentionInstance = RuntimeManager.CreateInstance(m_extentionRef);
+
+        {
+            EventDescription motorVelEventDesc = RuntimeManager.GetEventDescription(m_extentionRef);
+            PARAMETER_DESCRIPTION motorParameterDescription;
+            motorVelEventDesc.getParameterDescriptionByName("Velocity", out motorParameterDescription);
+            m_extentionVelocityID = motorParameterDescription.id;
+        }
 
         m_input = GetComponent<GrabberInput>();
+    }
+
+    private void OnDestroy()
+    {
+        m_motorInstance.release();
     }
 
     // Update is called once per frame
@@ -54,8 +83,11 @@ public class GrabberController : MonoBehaviour
             }
         }
         Vector3 velocity = m_input.m_inputVec * m_speed * Time.deltaTime;
+        if (velocity != Vector3.zero)
+            Debug.Log("Moves");
         transform.position += velocity;
         updateFmodParams(velocity);
+        Restrict();
     }
 
     void Restrict()
@@ -125,63 +157,86 @@ public class GrabberController : MonoBehaviour
     void updateXVelocity(Vector3 velocity)
     {
         float xVelocity = velocity.x * 6.0f;
+
+        PLAYBACK_STATE playbackState;
+        m_motorInstance.getPlaybackState(out playbackState);
+        bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
+
         if (xVelocity > -0.005f && xVelocity < 0.005f)
-        {
-            if (motor.IsPlaying())
+        { 
+            if (isPlaying)
             {
-                stopMotor.Play();
-                motor.Stop();
+                m_motorEndInstance = RuntimeManager.CreateInstance(m_motorEndRef);
+                m_motorEndInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+                m_motorEndInstance.start();
+                m_motorEndInstance.release();
+                m_motorInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
         else if (xVelocity < 0)
         {
-            if (!motor.IsPlaying())
+            if (!isPlaying)
             {
-                startMotor.Play();
-                motor.Play();
+                m_motorStartInstance = RuntimeManager.CreateInstance(m_motorStartRef);
+                m_motorStartInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+                m_motorStartInstance.start();
+                m_motorStartInstance.release();
+
+                m_motorInstance.start();
             }
 
             xVelocity *= -1.0f;
         }
         else
         {
-            if (!motor.IsPlaying())
+            if (!isPlaying)
             {
-                startMotor.Play();
-                motor.Play();
+                m_motorStartInstance = RuntimeManager.CreateInstance(m_motorStartRef);
+                m_motorStartInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+                m_motorStartInstance.start();
+                m_motorStartInstance.release();
+
+                m_motorInstance.start();
             }
         }
 
-        motor.SetParameter("Velocity", xVelocity);
+        m_motorInstance.setParameterByID(m_motorVelocityID, xVelocity);
+        m_motorInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
 
     void updateYVelocity(Vector3 velocity)
     {
         float yVelocity = velocity.y * 6.0f;
+
+        PLAYBACK_STATE playbackState;
+        m_extentionInstance.getPlaybackState(out playbackState);
+        bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
+
         if (yVelocity > -0.005f && yVelocity < 0.005f)
         {
-            if (extensionMotor.IsPlaying())
+            if (isPlaying)
             {
-                extensionMotor.Stop();
+                m_extentionInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
         else if (yVelocity < 0)
         {
-            if (!extensionMotor.IsPlaying())
+            if (!isPlaying)
             {
-                extensionMotor.Play();
+                m_extentionInstance.start();
             }
 
             yVelocity *= -1.0f;
         }
         else
         {
-            if (!extensionMotor.IsPlaying())
+            if (!isPlaying)
             {
-                extensionMotor.Play();
+                m_extentionInstance.start();
             }
         }
 
-        extensionMotor.SetParameter("Velocity", yVelocity);
+        m_extentionInstance.setParameterByID(m_extentionVelocityID, yVelocity);
+        m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
 }

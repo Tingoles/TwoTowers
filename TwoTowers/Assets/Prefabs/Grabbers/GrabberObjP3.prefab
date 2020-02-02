@@ -924,6 +924,10 @@ MonoBehaviour:
   m_grabAnim: {fileID: 1808032102973186151}
   m_minPos: {fileID: 8624928243528915650}
   m_maxPos: {fileID: 4673927033834869347}
+  m_motorRef: event:/Main/Claws/MotorMain
+  m_motorStartRef: event:/Main/Claws/MotorStart
+  m_motorEndRef: event:/Main/Claws/MotorStop
+  m_extentionRef: event:/Main/Claws/MotorExtend
 --- !u!54 &4823780745389184074
 Rigidbody:
   m_ObjectHideFlags: 0

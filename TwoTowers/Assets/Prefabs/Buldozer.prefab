@@ -17648,8 +17648,12 @@ MonoBehaviour:
   reverseDelayTime: 0.5
   moveBackTime: 2.5
   BlockSpawner: {fileID: 195045943}
+  blockPoolManager: {fileID: 0}
   debris:
   - {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55, type: 3}
+  - {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35, type: 3}
+  - {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4, type: 3}
+  numBlocksToSpawn: 4
   shovedFX: {fileID: 811460726}
   driveFX: {fileID: 277974428}
 --- !u!65 &3116837794503687188

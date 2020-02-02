@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
+    - target: {fileID: 25562684, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
+      propertyPath: debris.Array.data[3]
+      value: 
+      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d869f4ee4a00034f9986542bb8176f0, type: 3}
 --- !u!1 &394530964
@@ -422,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: BlocksToSpawn.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -432,7 +437,12 @@ PrefabInstance:
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: BlocksToSpawn.Array.size
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
+        type: 3}
+      propertyPath: BlocksToSpawn.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -443,7 +453,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
+      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -458,11 +468,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
-      propertyPath: BlocksToSpawn.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
-        type: 3}
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
@@ -470,7 +475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
+      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -487,7 +492,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[1]
       value: 
-      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
+      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
@@ -1370,6 +1375,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -0.99999577
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823780745389184075, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: m_motorRef
+      value: event:/Main/Claws/MotorMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823780745389184075, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: m_motorStartRef
+      value: event:/Main/Claws/MotorStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823780745389184075, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: m_motorEndRef
+      value: event:/Main/Claws/MotorStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823780745389184075, guid: 36e8e898485a8fe4b906237f553a5609,
+        type: 3}
+      propertyPath: m_extentionRef
+      value: event:/Main/Claws/MotorExtend
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e8e898485a8fe4b906237f553a5609, type: 3}
@@ -6454,10 +6479,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1705528800}
   - component: {fileID: 1705528799}
-  - component: {fileID: 1705528798}
   - component: {fileID: 1705528802}
   - component: {fileID: 1705528801}
   - component: {fileID: 1705528803}
+  - component: {fileID: 1705528798}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6465,14 +6490,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1705528798
-AudioListener:
+--- !u!114 &1705528798
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705528797}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!20 &1705528799
 Camera:
   m_ObjectHideFlags: 0
@@ -6975,21 +7005,9 @@ PrefabInstance:
       objectReference: {fileID: 1389723992}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
-      propertyPath: BlocksToSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
-        type: 3}
-    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
-        type: 3}
       propertyPath: blockPoolManager
       value: 
       objectReference: {fileID: 1389723992}
-    - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
-        type: 3}
-      propertyPath: BlocksToSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
-        type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[1]
@@ -7006,13 +7024,13 @@ PrefabInstance:
         type: 3}
       propertyPath: BlocksToSpawn.Array.data[3]
       value: 
-      objectReference: {fileID: 8337851154626763078, guid: 4dfc9b471e13110459b86813a620fa35,
+      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
         type: 3}
     - target: {fileID: 558932215480288738, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
-      propertyPath: BlocksToSpawn.Array.data[4]
+      propertyPath: BlocksToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 5953628845596910517, guid: afab30709bfb0cf48b253c621519bf55,
+      objectReference: {fileID: 3011376220198224646, guid: 5f45f0f13fcf9a749a19de3f042725c4,
         type: 3}
     - target: {fileID: 660249314549291204, guid: 4208afb8e7cb03746ab45425ecefeea3,
         type: 3}
