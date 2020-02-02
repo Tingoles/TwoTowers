@@ -19,6 +19,9 @@ public class BlockManager : MonoBehaviour
     public GameObject leftWorldUI;
     public GameObject rightWorldUI;
 
+    public GameObject leftBulldozer;
+    public GameObject rightBulldozer;
+
     private void Update()
     {
         if (calcHeights)

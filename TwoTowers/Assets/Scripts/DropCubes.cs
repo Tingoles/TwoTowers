@@ -39,12 +39,12 @@ public class DropCubes : MonoBehaviour
 
         if (rightBlocks.Count < 10 && timeTillSpawn < 0 && !leftSpawner)
         {
-            rightBulldozer.GetComponent<Bulldozer>().CreateCubes();
+            rightBulldozer.GetComponent<Bulldozer>().CreateCubes(5);
             timeTillSpawn = 15;
         }
         if (leftBlocks.Count < 10 && timeTillSpawn < 0 && leftSpawner)
         {
-            leftBulldozer.GetComponent<Bulldozer>().CreateCubes();
+            leftBulldozer.GetComponent<Bulldozer>().CreateCubes(5);
             timeTillSpawn = 15;
 
         }

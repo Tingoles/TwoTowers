@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         {
             bully.SetActive(true);
 
-            bully.GetComponent<Bulldozer>().CreateCubes();
+            bully.GetComponent<Bulldozer>().CreateCubes(5);
         }
         gameClock.countdown = true;
         blockManager.calcHeights = true;

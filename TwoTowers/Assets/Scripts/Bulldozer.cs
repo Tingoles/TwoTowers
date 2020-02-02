@@ -78,9 +78,9 @@ public class Bulldozer : MonoBehaviour
 
     }
 
-    public void CreateCubes()
+    public void CreateCubes(int num)
     {
-        StartCoroutine(SpawnDebris(5));
+        StartCoroutine(SpawnDebris(num));
         StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
     }
 
