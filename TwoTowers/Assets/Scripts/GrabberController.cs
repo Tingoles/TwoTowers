@@ -71,6 +71,8 @@ public class GrabberController : MonoBehaviour
 
     void Movement()
     {
+        Vector3 velocity = m_input.m_inputVec * m_speed * Time.deltaTime;
+        updateFmodParams(velocity);
         if (m_input.m_grabInput)
         {
             if (!m_grabbed)
@@ -80,13 +82,12 @@ public class GrabberController : MonoBehaviour
             else
             {
                 Drop();
+                StudioEventEmitter clawOpen = m_input.theClaw.GetComponents<StudioEventEmitter>()[1];
+                if (clawOpen != null) clawOpen.Play();
             }
         }
-        Vector3 velocity = m_input.m_inputVec * m_speed * Time.deltaTime;
-        if (velocity != Vector3.zero)
-            Debug.Log("Moves");
+
         transform.position += velocity;
-        updateFmodParams(velocity);
         Restrict();
     }
 
@@ -114,20 +115,23 @@ public class GrabberController : MonoBehaviour
 
     void Grab()
     {
+        m_input.theClaw.GetComponents<StudioEventEmitter>()[0].Play();
         m_grabbed = true;
         Collider[] cols = Physics.OverlapSphere(m_grabberPos.position, 0.8f, LayerMask.GetMask("Pickable"));
 
         if (cols.Length == 0) return;
+
         foreach (Collider collis in cols)
         {
-
             collis.gameObject.AddComponent<FixedJoint>();
             collis.gameObject.GetComponent<FixedJoint>().connectedBody = m_endSection.GetComponent<Rigidbody>();
             collis.gameObject.GetComponent<Collider>().enabled = false;
 
             m_grabbedObj.Add(collis.gameObject);
-
         }
+
+        StudioEventEmitter clawConnect = m_input.theClaw.GetComponents<StudioEventEmitter>()[2];
+        if (clawConnect != null) clawConnect.Play();
     }
 
     public void Drop()
@@ -172,6 +176,8 @@ public class GrabberController : MonoBehaviour
         m_motorInstance.getPlaybackState(out playbackState);
         bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
 
+        m_motorInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+
         if (xVelocity > -0.005f && xVelocity < 0.005f)
         {
             if (isPlaying)
@@ -211,7 +217,6 @@ public class GrabberController : MonoBehaviour
         }
 
         m_motorInstance.setParameterByID(m_motorVelocityID, xVelocity);
-        m_motorInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
 
     void updateYVelocity(Vector3 velocity)
@@ -222,11 +227,13 @@ public class GrabberController : MonoBehaviour
         m_extentionInstance.getPlaybackState(out playbackState);
         bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
 
+        m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+
         if (yVelocity > -0.005f && yVelocity < 0.005f)
         {
             if (isPlaying)
             {
-                m_extentionInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                m_extentionInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             }
         }
         else if (yVelocity < 0)
@@ -247,7 +254,12 @@ public class GrabberController : MonoBehaviour
         }
 
         m_extentionInstance.setParameterByID(m_extentionVelocityID, yVelocity);
-        m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+    }
+
+    public void stopMotors()
+    {
+        m_motorInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        m_extentionInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
 }

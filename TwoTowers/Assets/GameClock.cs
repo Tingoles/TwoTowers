@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
 
 public class GameClock : MonoBehaviour
 {
@@ -42,6 +43,10 @@ public class GameClock : MonoBehaviour
                 delayCountdown.timeRemaining = delay;
                 delayCountdown.countdown = true;
             }
+            else if (timeRemaining < 2)
+            {
+                Camera.main.GetComponent<StudioEventEmitter>().SetParameter("GameOver", 1.0f);
+            }
             textMesh.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining);
         }
     }
@@ -50,6 +55,7 @@ public class GameClock : MonoBehaviour
     {
         foreach (GrabberController control in FindObjectsOfType<GrabberController>())
         {
+            control.stopMotors();
             control.Drop();
             control.m_active = false;
         }
