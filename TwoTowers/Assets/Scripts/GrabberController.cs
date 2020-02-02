@@ -16,6 +16,7 @@ public class GrabberController : MonoBehaviour
     public Animator m_grabAnim;
     public Transform m_minPos;
     public Transform m_maxPos;
+    public GameObject m_claw;
 
     [EventRef]
     public string m_motorRef;
@@ -66,6 +67,7 @@ public class GrabberController : MonoBehaviour
     {
         if (!m_active) return;
         Movement();
+        RotateClaw();
         m_grabAnim.SetBool("Grabbed", m_grabbed);
     }
 
@@ -153,8 +155,6 @@ public class GrabberController : MonoBehaviour
         Gizmos.DrawSphere(m_grabberPos.position, 0.8f);
         Gizmos.DrawSphere(m_maxPos.position, .5f);
         Gizmos.DrawSphere(m_minPos.position, .5f);
-
-
 
     }
 
@@ -250,4 +250,14 @@ public class GrabberController : MonoBehaviour
         m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
 
+
+    void RotateClaw()
+    {
+        //Quaternion newRot = m_claw.transform.rotation;
+        ////newRot = newRot * Quaternion.Euler(new Vector3(0, 0, (m_input.m_inputVec.x)*0.20f));
+        //newRot = newRot * Quaternion.Euler(new Vector3(0, 0, (m_input.m_rightStickHorizontal) * 0.5f));
+        //m_claw.transform.rotation = newRot;
+
+        //m_claw.transform.Rotate(0, 0, z_rot);
+    }
 }
