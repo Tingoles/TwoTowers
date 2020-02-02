@@ -93,6 +93,7 @@ public class Bulldozer : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         driveFX.Play();
+        GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
         animator.SetFloat("Speed", 1.0f);
         for (float t = 0; t < forwardTime; t += Time.deltaTime)
         {
@@ -106,6 +107,7 @@ public class Bulldozer : MonoBehaviour
         shovedFX.Play();
 
         yield return new WaitForSeconds(reverseDelay);
+        GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
 
         animator.SetFloat("Speed", -1.0f);
         for (float t = 0; t < reverseTime; t += Time.deltaTime)
@@ -116,6 +118,9 @@ public class Bulldozer : MonoBehaviour
         }
         animator.SetFloat("Speed", 0.0f);
         inProgress = false;
+
+        GetComponents<FMODUnity.StudioEventEmitter>()[0].Stop();
+        GetComponents<FMODUnity.StudioEventEmitter>()[1].Stop();
     }
 
     public IEnumerator SpawnDebris(int num)

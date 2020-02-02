@@ -35,9 +35,6 @@
         <relationship name="parameters">
             <destination>{c8181512-cc18-485d-b872-cf56e2277d1f}</destination>
         </relationship>
-        <relationship name="banks">
-            <destination>{ddfd01fd-dd07-4a74-acd1-e3b32f010f29}</destination>
-        </relationship>
     </object>
     <object class="EventMixer" id="{7abe29a0-ab6f-4485-8066-b889c19dae9b}">
         <relationship name="masterBus">
@@ -180,6 +177,9 @@
         <property name="length">
             <value>0.29999999999999999</value>
         </property>
+        <property name="volume">
+            <value>-14.5</value>
+        </property>
         <property name="pitch">
             <value>-8</value>
         </property>
@@ -214,6 +214,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{c937ec90-061a-45bd-9dc4-402adf593f6b}">
+        <property name="volume">
+            <value>-14</value>
+        </property>
         <property name="name">
             <value>Clatter</value>
         </property>
@@ -363,6 +366,9 @@
     </object>
     <object class="MixerBusFader" id="{37ae228f-a2b8-418c-a196-da291a356837}"/>
     <object class="SpatialiserEffect" id="{0ba41a18-03fb-4ac4-9faa-b53e9704b812}">
+        <property name="distanceRolloffType">
+            <value>4</value>
+        </property>
         <property name="maximumDistance">
             <value>60</value>
         </property>
@@ -399,7 +405,7 @@
             <value>0</value>
         </property>
         <property name="value">
-            <value>-18</value>
+            <value>-25</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{fc5a44d8-fe27-4341-a155-02dd1f734caf}">
@@ -407,7 +413,7 @@
             <value>1</value>
         </property>
         <property name="value">
-            <value>-6</value>
+            <value>1.92000008</value>
         </property>
     </object>
 </objects>

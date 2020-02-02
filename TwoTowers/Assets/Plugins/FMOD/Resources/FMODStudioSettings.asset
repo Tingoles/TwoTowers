@@ -77,7 +77,6 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master Bank
-  Banks:
-  - D:/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master Bank.strings
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
