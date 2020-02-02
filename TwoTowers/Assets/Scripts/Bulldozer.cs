@@ -67,14 +67,14 @@ public class Bulldozer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (blockSpawnTimer >= blockSpawnDelay && blockPoolManager.GetComponent<BlockManager>().activeBlocks.Count < 30)
-        {
-            StartCoroutine(SpawnDebris(numBlocksToSpawn));
-            StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
-            blockSpawnTimer = 0;
-            blockSpawnDelay = 10;
-        }
-        blockSpawnTimer += Time.deltaTime;
+        //if (blockSpawnTimer >= blockSpawnDelay && blockPoolManager.GetComponent<BlockManager>().activeBlocks.Count < 30)
+        //{
+        //    StartCoroutine(SpawnDebris(numBlocksToSpawn));
+        //    StartCoroutine(Move(moveForwardTime, reverseDelayTime, moveBackTime));
+        //    blockSpawnTimer = 0;
+        //    blockSpawnDelay = 10;
+        //}
+        //blockSpawnTimer += Time.deltaTime;
 
     }
 

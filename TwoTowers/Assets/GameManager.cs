@@ -6,12 +6,17 @@ public class GameManager : MonoBehaviour
 {
     public List<GameObject> bulldozers = new List<GameObject>();
 
+
     public GameObject bomb;
 
     public GameClock gameClock;
     public BlockManager blockManager;
 
     public float timeTillBomb;
+
+
+    public GameObject leftBlockSpawner;
+    public GameObject rightBlockSpawner;
 
     private void Start()
     {
@@ -29,6 +34,9 @@ public class GameManager : MonoBehaviour
             obj.GetComponent<BombScript>().fuseTimer = 12.0f;
             timeTillBomb = Random.Range(20.0f, 30.0f);
         }
+
+        
+
     }
 
     IEnumerator blockBulldozerMechanics()
@@ -42,6 +50,10 @@ public class GameManager : MonoBehaviour
         }
         gameClock.countdown = true;
         blockManager.calcHeights = true;
+
+        yield return new WaitForSeconds(5);
+        rightBlockSpawner.SetActive(true);
+        leftBlockSpawner.SetActive(true);
     }
 
 }
