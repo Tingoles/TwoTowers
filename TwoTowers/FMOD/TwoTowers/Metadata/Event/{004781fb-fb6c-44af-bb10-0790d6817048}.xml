@@ -36,9 +36,6 @@
         <relationship name="parameters">
             <destination>{e1acc694-860e-47dc-a104-e2404c61cf59}</destination>
         </relationship>
-        <relationship name="banks">
-            <destination>{ddfd01fd-dd07-4a74-acd1-e3b32f010f29}</destination>
-        </relationship>
     </object>
     <object class="EventMixer" id="{985e9458-7030-4078-989d-7f3e3b159892}">
         <relationship name="masterBus">
@@ -402,6 +399,9 @@
         </property>
     </object>
     <object class="SpatialiserEffect" id="{16bf74fb-438b-45f0-a1e9-4bbc4786c04f}">
+        <property name="distanceRolloffType">
+            <value>4</value>
+        </property>
         <property name="maximumDistance">
             <value>60</value>
         </property>

@@ -37,6 +37,7 @@ public class BombScript : MonoBehaviour
         GetComponent<Renderer>().material.SetColor("_EmissionColor", newColour * (timeSinceFuseStart / fuseTimer));
 
         transform.position += Random.insideUnitSphere * (timeSinceFuseStart / fuseTimer)*0.08f;
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
         if (timeSinceFuseStart >= fuseTimer)
         {

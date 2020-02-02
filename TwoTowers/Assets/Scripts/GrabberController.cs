@@ -11,7 +11,7 @@ public class GrabberController : MonoBehaviour
     public Transform m_grabberPos;
     public GameObject m_endSection;
     public bool m_grabbed = false;
-    GameObject m_grabbedObj;
+    List<GameObject> m_grabbedObj = new List<GameObject>();
     GrabberInput m_input;
     public Animator m_grabAnim;
     public Transform m_minPos;
@@ -115,32 +115,42 @@ public class GrabberController : MonoBehaviour
     void Grab()
     {
         m_grabbed = true;
-        Collider[] cols = Physics.OverlapSphere(m_grabberPos.position, .5f, LayerMask.GetMask("Pickable"));
-        if (cols.Length == 0) return;
-        if (cols[0])
-        {
-            cols[0].gameObject.AddComponent<FixedJoint>();
-            cols[0].gameObject.GetComponent<FixedJoint>().connectedBody = m_endSection.GetComponent<Rigidbody>();
-            cols[0].gameObject.GetComponent<Collider>().enabled = false;
+        Collider[] cols = Physics.OverlapSphere(m_grabberPos.position, 0.8f, LayerMask.GetMask("Pickable"));
 
-            m_grabbedObj = cols[0].gameObject;
+        if (cols.Length == 0) return;
+        foreach (Collider collis in cols)
+        {
+
+            collis.gameObject.AddComponent<FixedJoint>();
+            collis.gameObject.GetComponent<FixedJoint>().connectedBody = m_endSection.GetComponent<Rigidbody>();
+            collis.gameObject.GetComponent<Collider>().enabled = false;
+
+            m_grabbedObj.Add(collis.gameObject);
+
         }
     }
 
-    void Drop()
+    public void Drop()
     {
         m_grabbed = false;
-        if (m_grabbedObj)
+        m_grabAnim.SetBool("Grabbed", m_grabbed);
+        if (m_grabbedObj.Count == 0) return;
+        foreach (GameObject g in m_grabbedObj)
         {
-            Destroy(m_grabbedObj.GetComponent<FixedJoint>());
-            m_grabbedObj.GetComponent<Collider>().enabled = true;
+            if (g.GetComponent<FixedJoint>())
+            {
+                Destroy(g.GetComponent<FixedJoint>());
+                g.GetComponent<Collider>().enabled = true;
+            }
 
         }
+        m_grabbedObj.Clear();
+
     }
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(m_grabberPos.position, .5f);
+        Gizmos.DrawSphere(m_grabberPos.position, 0.8f);
         Gizmos.DrawSphere(m_maxPos.position, .5f);
         Gizmos.DrawSphere(m_minPos.position, .5f);
 
@@ -163,7 +173,7 @@ public class GrabberController : MonoBehaviour
         bool isPlaying = playbackState != PLAYBACK_STATE.STOPPED;
 
         if (xVelocity > -0.005f && xVelocity < 0.005f)
-        { 
+        {
             if (isPlaying)
             {
                 m_motorEndInstance = RuntimeManager.CreateInstance(m_motorEndRef);
@@ -239,4 +249,5 @@ public class GrabberController : MonoBehaviour
         m_extentionInstance.setParameterByID(m_extentionVelocityID, yVelocity);
         m_extentionInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
     }
+
 }

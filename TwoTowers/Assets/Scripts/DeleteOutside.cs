@@ -20,6 +20,10 @@ public class DeleteOutside : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
+            if(collision.gameObject.GetComponent<FixedJoint>())
+            {
+                return;
+            }
             BlockManager bm = GameObject.FindGameObjectWithTag("BlockManager").GetComponent<BlockManager>();
             bm.activeBlocks.Remove(collision.gameObject);
             Destroy(collision.gameObject);

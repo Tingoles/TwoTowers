@@ -31,11 +31,13 @@ public class Debris : MonoBehaviour
         float velocity = Mathf.Abs(GetComponent<Rigidbody>().velocity.magnitude) / 30.0f;
         velocity = Mathf.SmoothStep(0, 1, velocity);
 
-        if(velocity > 0.05f)
+        if(emitter != null)
         {
-            emitter.SetParameter("Velocity", velocity);
-            emitter.Play();
+            if (velocity > 0.05f)
+            {
+                emitter.SetParameter("Velocity", velocity);
+                emitter.Play();
+            }
         }
-        
     }
 }
