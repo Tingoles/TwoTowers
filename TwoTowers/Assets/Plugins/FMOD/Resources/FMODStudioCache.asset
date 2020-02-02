@@ -37,7 +37,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -2546065993839364916}
+  - {fileID: 8041626758929870886}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
   Path: C:/Users/Bryce/Desktop/Repos/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
     Bank.strings.bank
   SubDir: 
-  lastModified: 637162317985292414
+  lastModified: 637162359118391826
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -417,6 +417,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Wood/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6201453008363591031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Block/Velocity
   m_EditorClassIdentifier: 
   Name: Velocity
   Min: 0
@@ -491,6 +508,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5494312263716398650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MotorMain/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5466297819281442815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +572,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 22000
+--- !u!114 &-5431165165298641816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MotorExtend/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5421276072249361933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1129,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1927917520202011987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generic/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1730546681370792032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,7 +1217,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -714682176300869899}
+  - {fileID: -1927917520202011987}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -1443,7 +1511,7 @@ MonoBehaviour:
   - {fileID: 1876480330138807779}
   StringsBanks:
   - {fileID: -6694960121753679315}
-  stringsBankWriteTime: 637162317985292414
+  stringsBankWriteTime: 637162359118391826
   cacheVersion: 3
 --- !u!114 &14595108101255910
 MonoBehaviour:
@@ -1574,7 +1642,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 6713468745124132047}
+  - {fileID: 9141329499856529680}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -1775,6 +1843,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1591565526974907284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Metal/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1699935649542519815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,8 +1880,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6045738680613365662}
-  - {fileID: 4218477860834200630}
+  - {fileID: -6201453008363591031}
+  - {fileID: 2963011409212128965}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -1815,7 +1900,7 @@ MonoBehaviour:
   Path: C:/Users/Bryce/Desktop/Repos/TwoTowers/TwoTowers/FMOD/TwoTowers/Build/Desktop/Master
     Bank.bank
   SubDir: 
-  lastModified: 637162317985562263
+  lastModified: 637162359118661676
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1855,6 +1940,23 @@ MonoBehaviour:
   Max: 6
   Default: 0
   Exists: 0
+--- !u!114 &2538577433758845778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Gameplay/GameOver
+  m_EditorClassIdentifier: 
+  Name: GameOver
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2546662793039035349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +2095,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 80
   Length: 4000
+--- !u!114 &2963011409212128965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Block/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 1
 --- !u!114 &3059675794824755768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2323,7 +2442,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5280044864472985756}
+  - {fileID: -5494312263716398650}
   MinDistance: 1
   MaxDistance: 60
   Length: 125
@@ -2472,7 +2591,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 574276436965474405}
+  - {fileID: 1591565526974907284}
   MinDistance: 1
   MaxDistance: 60
   Length: 0
@@ -2547,7 +2666,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8881186609397817236}
+  - {fileID: 2538577433758845778}
   MinDistance: 0
   MaxDistance: 0
   Length: 7200
@@ -2836,6 +2955,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8041626758929870886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Concrete/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8233511911860338739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,6 +3176,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &9141329499856529680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wood/Velocity
+  m_EditorClassIdentifier: 
+  Name: Velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &9157892264060904849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3060,7 +3213,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -4557344878319088404}
+  - {fileID: -5431165165298641816}
   MinDistance: 1
   MaxDistance: 60
   Length: 23

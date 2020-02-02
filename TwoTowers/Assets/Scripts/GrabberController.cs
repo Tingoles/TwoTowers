@@ -135,7 +135,8 @@ public class GrabberController : MonoBehaviour
         m_grabbed = false;
         foreach (GameObject g in m_grabbedObj)
         {
-            Destroy(g.GetComponent<FixedJoint>());
+            if(g.GetComponent<FixedJoint>())
+                Destroy(g.GetComponent<FixedJoint>());
             g.GetComponent<Collider>().enabled = true;
 
         }
